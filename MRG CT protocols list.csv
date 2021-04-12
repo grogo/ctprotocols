@@ -1,6 +1,6 @@
 #,Description,Indications,MDCT Protocol
-100A,head ,without ,,,,,,,,,,,,,
-100C,head ,with and without ,,,,,,,,,,,,,
+CT 100A,head ,without ,,,,,,,,,,,,,
+CT 100C,head ,with and without ,,,,,,,,,,,,,
 102A,3D head ,without ,pediatric ,,,,,,,,,,,,
 110A,orbits ,without,,,,,,,,,,,,,
 110B,orbits ,with,,,,,,,,,,,,,
@@ -134,7 +134,7 @@
 716C,C/A/P Liver,without and with,"Chest and pelvis with, abd without and with (liver protocol)",,,,,,,,,,,,
 717C,C/A/P Renal mass,without and with,"Chest and pelvis with, abd without and with (renal mass protocol)",,,,,,,,,,,,
 718C,C/A/P Adrenal,without and with,"Chest and pelvis with, abd without and with (adrenal protocol )",,,,,,,,,,,,
-719B,CAP HIPEC ,WITH ,,,,,,,,,,,,,
+719B,C/A/P HIPEC ,WITH ,,,,,,,,,,,,,
 720B,"Chest, Abdomen, Pelvis",with,Routine with IV contrast,,,,,,,,,,,,
 721A,"Chest, Abdomen, Pelvis",without,Rotuine without IV,,,,,,,,,,,,
 722C,"Chest, Abdomen, Pelvis",without and with,"No specific protocol (see above), just without and with routine scan",,,,,,,,,,,,
