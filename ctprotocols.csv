@@ -1,5 +1,5 @@
 #,Description,Indications,MDCT Protocol
-CT 1,"CT Head non-contrast, Normal","R/O bleed, mass, trauma,","Head w/o, 4.5 mm axial"
+CT 1,"CT Head non-contrast, Normal","R/O bleed, mass, trauma,","Head w/o, 4.5 mm axial",,,,,,,,,,,,,
 CT 2,CT Head w/ only,"Mass, infection","Same as above, w/ con"
 CT 3,CT Head w/o & w/,"Mass, Known CA, HIV","Same as above, w/ con"
 CT 4,CT Sella w/,"Pituitary pathology, if MRI cannot be performed","Sella 1/1 coronal w/ sagittal reformats, then head w/"

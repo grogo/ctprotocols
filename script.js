@@ -7,7 +7,7 @@ var protocolList = new List('protocolDIV', options);
 
 // CSV STUFF
 var CSVProtocols = new XMLHttpRequest(), CSVLines = [];
-CSVProtocols.open('GET', 'ctprotocols.csv', true);
+CSVProtocols.open('GET', 'MRG CT protocols list.csv', true);
 CSVProtocols.overrideMimeType("text/plain");
 CSVProtocols.send();
 
