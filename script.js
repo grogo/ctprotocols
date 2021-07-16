@@ -1,4 +1,4 @@
-// Get CT CSV first
+// Get CT CSV first. created by opening "CT protocols list" GSheet, Select All, Copy, Paste into Excel, Save as CSV.
 var request = new XMLHttpRequest();
 request.open('GET', 'MRG CT protocols.csv');
 request.overrideMimeType("text/plain");
@@ -266,6 +266,8 @@ var PDFLinks =
 		
 		// MRI 600 VASCULAR
 
-		// MRI 700 COMBINED */
+		// MRI 700 COMBINED 
+		
+		*/
 	};
 
