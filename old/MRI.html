@@ -2,15 +2,12 @@
 		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>MRG Protocol Lookup</title>
 	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-	<link rel="shortcut icon" type="image/png" href="hashtag_icon.png">
-	<link rel="icon" type="image/png" href="hashtag_icon.png">
 </head>
 
 <body>
 <H1>MRG Protocol Lookup</H1>
-<P>Updated: 7/14/21</P>
+<P>Updated: 7/3/21</P>
 
 <P>Start typing anything in the search box to narrow down the list.</P>
 
@@ -19,17 +16,19 @@
 			<tr>
 				<th colspan="7">
 					<input class="search" placeholder="Search" autofocus/> 
+					<a href="index.html">CT</a>
+					<a href="MRI.html">MRI</a>
 				</th>
 				
 			</tr>
 			<tr>
 				<th class="numberCol">#</th>
-				<th class="nameCol">Description</th>
+				<th class="nameCol">Name</th>
+				<th class="timeCol">Time</th>
 				<th class="contrastCol">IV Contrast</th>
 				<th class="regionCol">Anatomic Region</th>
 				<th class="infoCol">Additional Info</th>
-				<th class="fullCol">Full Protocol</th>
-				<th class="timeCol">Time</th>
+				<th class="fullCol">Full protocol</th>
 			</tr>
 
 			<tbody class="list">
@@ -39,11 +38,11 @@
 					<tr id="protocolItem">
 						<td class="protNum"></td>
 						<td class="protName">Loading...</td>
+						<td class="protTime"></td>
 						<td class="protContrast"></td>
 						<td class="protRegion"></td>
 						<td class="protInfo"></td>
 						<td class="protFull"></td>
-						<td class="protTime"></td>
 					</tr>
 
 			</tbody>
@@ -51,7 +50,7 @@
 	</div>
 
 	<script type="text/javascript" src="acch_data_list.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="scriptMRI.js"></script>
 
 </body>
 </html>
