@@ -1,7 +1,7 @@
 script.js
     faster addProtocols()?
     add all the PDF links to JSON
-        duplicates: CT 122A and 124A
+        including the mfr protocols - need to manually add these? CT 122A, 124A, 390A, 420, 421, 422,424
 
 CSV files: 
     remove all commas from each cell
