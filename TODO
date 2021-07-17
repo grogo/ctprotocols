@@ -8,3 +8,11 @@ CSV files:
         [x] CT
         [ ] MR
 	streamline process Google Sheets -> CSV
+        publish protocols GSheets as CSV? doesn't work
+        getting the d/l link from Download As? doesn't work
+            https://stackoverflow.com/questions/33713084/download-link-for-google-spreadsheets-csv-export-with-multiple-sheets
+
+list.js
+    update to new version
+    fuzzy search?
+    multiple word search?
