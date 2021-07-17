@@ -2,17 +2,15 @@ script.js
     faster addProtocols()?
     add MRI PDF links to JSON
     add CT mfr protocols - need to manually add these? CT 122A, 124A, 390A, 420, 421, 422,424
+    duplicate MR protocols - 302C, 307A, 425C
 
 CSV files: 
-    remove all commas from each cell
-        [x] CT
-        [ ] MR
 	streamline process Google Sheets -> CSV
         publish protocols GSheets as CSV? doesn't work
         getting the d/l link from Download As? doesn't work
             https://stackoverflow.com/questions/33713084/download-link-for-google-spreadsheets-csv-export-with-multiple-sheets
 
 list.js
-    update to new version
+    update to new version?
     fuzzy search?
     multiple word search?

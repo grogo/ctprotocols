@@ -22,10 +22,10 @@ request.onreadystatechange = function() {
 				MRData.splice(0,1);								// remove MR header row
 				trimCSV(MRData);
 
-				for(i=0; i<CTData.length; i++)	
+				for (i=0; i<CTData.length; i++)	
 					CTData[i][0] = "CT " + CTData[i][0]; 		// prepend "CT " to protocol # - this crashes if placed in trimCSV
 			
-				for(i=0; i<MRData.length; i++) 
+				for (i=0; i<MRData.length; i++) 
 					MRData[i][0] = "MR " + MRData[i][0]; 		// prepend "MR " to protocol # - this crashes if placed in trimCSV
 				
 				MRData = rearrange(MRData,[0,1,3,4,5,6,2]);		// shift MR Time col (position 2 in the CSV) to the end
@@ -75,7 +75,7 @@ function rearrange(rows, pos) {
 // Add CSV Data to the table
 function addProtocols() {	
 	for (i=0; i<CSVData.length; i++) {
-		if(PDFLinks[CSVData[i][0]] !== undefined)	// check to make sure a matching PDF link exists in the JSON array
+		if (PDFLinks[CSVData[i][0]] !== undefined)	// check to make sure a matching PDF link exists in the JSON array
 			CSVData[i][5] = "<a href=\""+PDFLinks[CSVData[i][0]].replace("edit?usp=sharing","export?format=pdf&attachment=false")+"\" target=\"_blank\">PDF</a>";	// if so, add PDF link in 6th column, replacing the default GDocs Sharing link with one that opens pdf format in a tab/window
 			// CSVData[i][5] = "<a href=\"#\" onclick=\"window.open(\'"+PDFLinks[CSVData[i][0]]+"\', \'_blank\', \'fullscreen=yes\'); return false;\">PDF</a>"; 	// this opens new window
 		
@@ -251,17 +251,164 @@ var PDFLinks =
 		"CT 720C":"https://docs.google.com/document/d/1D9MQbxMTtMTEq37ZBjeNQMSo9DgoxfpDECy7gcFqDis/edit?usp=sharing",
 		"CT 723B":"https://docs.google.com/document/d/1tbWy-ZSTOt_R_vOx41esBVDUWg4J0fUXv15G13hQKHM/edit?usp=sharing",
 		
-		
-		
-		/*
+
 		// MRI 100 NEURO
+		"MR 100A":"https://docs.google.com/document/d/1KATgW6r5xV3xl3WqshPP2lbJpjuQEHanAju5xUr1Wpk/edit?usp=sharing",
+		"MR 100C":"https://docs.google.com/document/d/1ocVviKiHlrKvszCImOjsV01RPWcSQ7dW0EufdJOCbZQ/edit?usp=sharing",
+		"MR 102C":"https://docs.google.com/document/d/1Sez70fM05NoFoaa2UdMA8abB11enWHioAAy_e5OQnSs/edit?usp=sharing",
+		"MR 103C":"https://docs.google.com/document/d/1uSdPXQWeaO-CTpfEq82ASVytojmvyti9hZwnI5yhwfE/edit?usp=sharing",
+		"MR 105C":"https://docs.google.com/document/d/18pRvf36LaQjWyDXx--r-DHv54mY63rd7hpNioDVk5B8/edit?usp=sharing",
+		"MR 106C":"https://docs.google.com/document/d/1EPuVLgd64PvQUQLyaR5HQ6quNYlu63uaMuKK8kHlxdU/edit?usp=sharing",
+		"MR 107C":"https://docs.google.com/document/d/1WiZFBgrDIwQ-bI6NM5O_oo3DTxsLrqfnczksQMirTEY/edit?usp=sharing",
+		"MR 108A":"https://docs.google.com/document/d/1p2poz-ljrn5S0K29k7Rly-avCD73vQ-QYThpmgR_Crg/edit?usp=sharing",
+		"MR 108C":"https://docs.google.com/document/d/1pu2ipTDXvYNOgqiwGfDBmfYv7UPHtCxTKAfhs2iaABs/edit?usp=sharing",
+		"MR 110A":"https://docs.google.com/document/d/1_tjXSf-FrvN5ZHCcr2Cmd4QjSLto1CjIrbdmtQyZXVo/edit?usp=sharing",
+		"MR 111A":"https://docs.google.com/document/d/1xbjRTvHmH3shQLza8u6ldBoF9m0AEzG9Gwc4xQp-93I/edit?usp=sharing",
+		"MR 115A":"https://docs.google.com/document/d/1AY8iqmhhawdvnAl8wkpTmt553U9jwPzZrwHvVOsVSI4/edit?usp=sharing",
+		"MR 115C":"https://docs.google.com/document/d/1RBWMm3J4RS-1T0lqUKJG8YA025SWp_kaM3pDrmu3y2g/edit?usp=sharing",
+		"MR 116A":"https://docs.google.com/document/d/1ONWCR5yFNQgyjSZ3q5DMUCNTIhmO4pUx0O55V1WmAFw/edit?usp=sharing",
+		"MR 116C":"https://docs.google.com/document/d/1uI1TXYNTx1_YKw77xZOvhyVMiHQf8an8ucqOTotBVPA/edit?usp=sharing",
+		"MR 130C":"https://docs.google.com/document/d/1hlFiUIKoYxwQYQXSs2iNcPIh8gJEJZ2LJ-9Lm_dBUKk/edit?usp=sharing",
+		"MR 131C":"https://docs.google.com/document/d/1GxcuvMbu8YzdfLMQPfZYKBPi6YAz3qEXMvXatlSTJA8/edit?usp=sharing",
+		"MR 140A":"https://docs.google.com/document/d/1fDQFSc_-YpJ6yZ7KRoQZ4ficzTgQk8FQ4I-viX2O8x4/edit?usp=sharing",
+		"MR 140C":"https://docs.google.com/document/d/1AOinDJ7juT4QBPIgWIYVZhO1B81DU4sBk6d02zpkz_Y/edit?usp=sharing",
+		"MR 142C":"https://docs.google.com/document/d/10DQwk55N7fFzt0lzm6azHCqlaDLPDQ_ERebTTPZo3I4/edit?usp=sharing",
+		"MR 143C":"https://docs.google.com/document/d/1st91LBK5UrFZepXza503pFby2QN8zWpre8bxh9y_I2g/edit?usp=sharing",
+		"MR 144C":"https://docs.google.com/document/d/1--RFI0-kdORO85srERQJzo2VkX1VcHZ7p65bbMlK6Hk/edit?usp=sharing",
+		"MR 145C":"https://docs.google.com/document/d/1TsKegrLRxG8t-iH0I1bj_bM0xYVWj_45mx-xc71vfao/edit?usp=sharing",
+		"MR 146C":"https://docs.google.com/document/d/1yR9ccFm-4D8lTHtbo1N790sp8k7RzMHQrWuF7UEYicM/edit?usp=sharing",
+		"MR 150C":"https://docs.google.com/document/d/1AWEpqujMyxFWj8fWt1hmLqKi9pDIbsOTkCqNz8pwZbo/edit?usp=sharing",
+		"MR 151C":"https://docs.google.com/document/d/1CD22RtCqxrjFXD7T6fxD2Uy_sx8tcMY2IBrTSvaoTtE/edit?usp=sharing",
+		"MR 152C":"https://docs.google.com/document/d/1y_8H4OgU_KMoMYAzATdKCqnVGjjPvCVReYVDszN7sBQ/edit?usp=sharing",
+		"MR 153A":"https://docs.google.com/document/d/1tyw4J3CzLFC_OvOg2VZDgEqxyPENHy9GovNkq5Js3Ws/edit?usp=sharing",
+		"MR 160A":"https://docs.google.com/document/d/1nBrL7DwZr6xjBxxBOAljJ7TNh_Qa2Gy06v4Egbra59w/edit?usp=sharing",
+		"MR 180A":"https://docs.google.com/document/d/1H7l0iL7CMebL1PBUnGDdzwiwE4W0Fte7beWlOO83ZS8/edit?usp=sharing",
+		"MR 180C":"https://docs.google.com/document/d/13pe2Eyfvl0fjB_gvwHl7x2DuIQpdZc23EqtRzB4m-_Q/edit?usp=sharing",
 		
 		// MRI 200 THORAX
-
+		"MR 200A":"https://docs.google.com/document/d/1eq6kFDxc0tOv6_TLHtRcQ3OYbhjf14ffuH8gvAPH83s/edit?usp=sharing",
+		"MR 200C":"https://docs.google.com/document/d/1rRMq1dG3OA5mb6zQMakjvE8T8mbwwWAWxBRCCpDKn4Q/edit?usp=sharing",
+		"MR 221C":"https://docs.google.com/document/d/11YwWXm0ijzNwuU4gWFj00wiyWP296V3Xlb6cZPT6Tgo/edit?usp=sharing",
+		"MR 225C":"https://docs.google.com/document/d/12MN0wdjACQ02hhTlW3mu_XjwqN4GWevQHi5djBcwwxc/edit?usp=sharing",
+		"MR 230C":"https://docs.google.com/document/d/1HGOrVLx28cyOqscYrmRK2Kxep0VDbNkY7XX_gbEe7DI/edit?usp=sharing",
+		
 		// MRI 300 ABDOMEN PELVIS
-
+		"MR 300A":"https://docs.google.com/document/d/1WedWnGgqGXaf4xKfMnG7Zqmb1KHtyMVmNn1PHOm2J7w/edit?usp=sharing",
+		"MR 300C":"https://docs.google.com/document/d/1aBHkjOIUsWU6ZSxDP7TIR51C3uH-QILhX9dHCeyudpQ/edit?usp=sharing",
+		"MR 301C":"https://docs.google.com/document/d/1gMG1rMnxbnC3E2LFpHKOcwKLXFd_Z7lvDmu5ZSGaGm4/edit?usp=sharing",
+		"MR 302C":"https://docs.google.com/document/d/1o9ZJ-u7I5kb3ib0VQpxZf0QIAAlkTf403hnm0UNBgYM/edit?usp=sharing",
+		"MR 303C":"https://docs.google.com/document/d/1NC7R44o9Z1OAFImBD_0Ezn4eGJHCfsSIWiNOe2YYz48/edit?usp=sharing",
+		"MR 304C":"https://docs.google.com/document/d/1jyZoz30EaVtw-f2N0brRr7L93EEtA4lY5ZUIAqpbhZE/edit?usp=sharing",
+		"MR 305C":"https://docs.google.com/document/d/1f7vRNyNayjRGvk9YaNFIT6P9VG9JdAaDORp6Y8JwtOA/edit?usp=sharing",
+		"MR 307A":"https://docs.google.com/document/d/1vuMsOof33FsTxwRPcjP9S5JEhVltAllnGIibOvblpT0/edit?usp=sharing",
+		"MR 308A":"https://docs.google.com/document/d/1dl9qnO6BT8lL80Sscf0jO0TQ3jFF-ZsfBZ4uZK7W19w/edit?usp=sharing",
+		"MR 309C":"https://docs.google.com/document/d/1Cnavk64s-vTLRyFkuY1bYQCJonCvUgw6wqmKz7sVDDY/edit?usp=sharing",
+		"MR 310A":"https://docs.google.com/document/d/127Ud9y4fXGvm1dVbBsUYM0VqlA7G2i6TqXkUVCKYnns/edit?usp=sharing",
+		"MR 340C":"https://docs.google.com/document/d/1GKIzzpJRR3nt5fNPv5b6IDNoAYrEm3yO64eCdRwAiIc/edit?usp=sharing",
+		"MR 350C":"https://docs.google.com/document/d/1m9hekhZzL-_q3wN67gRIdLXRO4HlyUAiUdeRmzrFTvk/edit?usp=sharing",
+		"MR 360C":"https://docs.google.com/document/d/1MWCiZrGiOw41loQz5xIKN4t6xR72_UpVhzNkcrvZFWc/edit?usp=sharing",
+		"MR 361C":"https://docs.google.com/document/d/1f-jAz0RP4cbNCZ8bPpHGBOef3-K4rt6RJ3oRrXl5I0E/edit?usp=sharing",
+		"MR 362C":"https://docs.google.com/document/d/1F7yFNMQvLjzhcQgXzJazJEVKyxCDR4UCX40buiqWqlY/edit?usp=sharing",
+		"MR 363C":"https://docs.google.com/document/d/1g9AT2-wTvz9aYp2y2y9XAce2OAkFaAofM-pIZmWCWD8/edit?usp=sharing",
+		"MR 365C":"https://docs.google.com/document/d/1EBk3ZkWYoBx8W0-sgMuvzyW7PnXtYxkFR8opkYF9vCs/edit?usp=sharing",
+		"MR 366A":"https://docs.google.com/document/d/1yacD_x45fqcQMNcggQaWwpMlQlO95nlm00TBwi00XTM/edit?usp=sharing",
+		"MR 367A":"https://docs.google.com/document/d/1pUHrvkJB6IwW4mb-v3GMKSQY669sws2hPJPxRuba6NI/edit?usp=sharing",
+		"MR 368C":"https://docs.google.com/document/d/1jQPQ9hT-DLSVFcpv1X7bBjpcNHaDdVv_JHr4CT-obnM/edit?usp=sharing",
+		"MR 369A":"https://docs.google.com/document/d/1nB5HJeGHu-ix698Hy80_OQ3zSh3Cg0YiOc7swxxRb0k/edit?usp=sharing",
+		"MR 370A":"https://docs.google.com/document/d/18FWER-MWu4d7u-Sv72mV4N7ViWL43mDvk66WFYVc74M/edit?usp=sharing",
+		"MR 370C":"https://docs.google.com/document/d/1MVdZhHbqKwRnMd6KMUZ4caOOVWStfAmUY76TgpbrO8o/edit?usp=sharing",
+		"MR 372C":"https://docs.google.com/document/d/1Swmpl04-wuXraLcg3_SDZeUKM8ry7ZEKwO0yRkSbszE/edit?usp=sharing",
+		"MR 373C":"https://docs.google.com/document/d/1t0J-0NNZQkbhFrsmRYhpuWxd0W5lsc4Od2DDZbe0YQA/edit?usp=sharing",
+		"MR 374C":"https://docs.google.com/document/d/1KohBgeMY0SjPdiEFchhamxsE8AAz_hzEfhKutoabEAg/edit?usp=sharing",
+		"MR 375C":"https://docs.google.com/document/d/1qjPkeT5lyj259kZP6Fd3N_qyuVJ-svuyWtkLqVrAnyM/edit?usp=sharing",
+		"MR 376A":"https://docs.google.com/document/d/1ahXxJx3ddE10PgrrVgWd9QpAnul8L_ByWDXKQ94bm-E/edit?usp=sharing",
+		
 		// MRI 400 MSK
-
+		"MR 400A":"https://docs.google.com/document/d/1Xe5MnjpaEHeLFnnERF5ZuvqhdMgIQe_JqAd2uZHt_EY/edit?usp=sharing",
+		"MR 400C":"https://docs.google.com/document/d/12SM57aIoGrGUtZIynKr32U5RJ-F-kH9kCk1ysGdhNBM/edit?usp=sharing",
+		"MR 400D":"https://docs.google.com/document/d/1njE6uSKRZ314PgS8vXKIJwAFFACMI4ND8o4s7XrPLJU/edit?usp=sharing",
+		"MR 403A":"https://docs.google.com/document/d/1sMzYjE-2lJvpBQ2B9vl6sUPeCX-A1fK2eYVT56GdMPs/edit?usp=sharing",
+		"MR 403C":"https://docs.google.com/document/d/1RUkld9h5UH1IJdllLLrJ8ZYU6DtRpSri7DWapoOEhsI/edit?usp=sharing",
+		"MR 405A":"https://docs.google.com/document/d/1hdSHjYuAnb83-OeUgXiNvl3G1zNLqud7i49TQQUSpXM/edit?usp=sharing",
+		"MR 405C":"https://docs.google.com/document/d/1Jd1NsS_siW-oDol2ER6YEmBxz1jPN1RuvrmmRinKTn4/edit?usp=sharing",
+		"MR 406A":"https://docs.google.com/document/d/12Z7ZH4VwNGQYTJMnBaLPQPUaSWdkMNg5FDXOqMsJC5Y/edit?usp=sharing",
+		"MR 408A":"https://docs.google.com/document/d/1IGlK67-bFtkXTc03vi0J3zDgkxq5FbDtqCbT9lw_UpY/edit?usp=sharing",
+		"MR 408C":"https://docs.google.com/document/d/1fEXjQAnx_Zl-9NlRsV1ywxVV131LPkQNCPtCPsSke3g/edit?usp=sharing",
+		"MR 408D":"https://docs.google.com/document/d/16mUh0lyX3pwU9YhhSTkukXDldu0GCXxRq2uOs1g6Rfo/edit?usp=sharing",
+		"MR 411A":"https://docs.google.com/document/d/1R8Tg_hul8qK-RBw2POJnwbSNlsXHbJfCY5Dvm9w36cc/edit?usp=sharing",
+		"MR 411C":"https://docs.google.com/document/d/1kAWyyJTYqxwILU5Oqy1naytTzAAraT5biN7Jwp8Aep4/edit?usp=sharing",
+		"MR 413A":"https://docs.google.com/document/d/1HJyo4dt81aoDI0Y3keldpXsz2eZipu5Lf7DuZEDJuzA/edit?usp=sharing",
+		"MR 420A":"https://docs.google.com/document/d/1pEmFTfINcjcr8JdPFn_sPIo9KPHKhGqdu1pq9wqAOtk/edit?usp=sharing",
+		"MR 420C":"https://docs.google.com/document/d/10BKPS5ezghCOzrr35tAJfkdgMtQnDOOiV5iGYLM1iyQ/edit?usp=sharing",
+		"MR 420D":"https://docs.google.com/document/d/1RbsT8hoPtl7-czpiMfITE6lU-HX9bDsdC97EriZZ66A/edit?usp=sharing",
+		"MR 423A":"https://docs.google.com/document/d/1eRD8KMzhEmO5GMNMbAmf-0xgXicvVODk6jivTQK-3Vk/edit?usp=sharing",
+		"MR 423C":"https://docs.google.com/document/d/1gR-5_WsxfbowwZN5pttdyUjdecWmqI9_fgATRkaHqRo/edit?usp=sharing",
+		"MR 425C":"https://docs.google.com/document/d/1Ruc5Uwh_7xwZjSS-rs-mZjFsBv9BSiqGmlQnnNLnayE/edit?usp=sharing",
+		"MR 426A":"https://docs.google.com/document/d/12ADuvyJ1PeA65z_sRnxeusxBuNCN_MUervHmFg17Q9I/edit?usp=sharing",
+		"MR 426C":"https://docs.google.com/document/d/117zTAX-8W_EkKYbSB-KmHebNTiZxSV8_WdeZFCdzmOE/edit?usp=sharing",
+		"MR 430A":"https://docs.google.com/document/d/1ujXUueD2BCZCzkgbdWgSohI3cwBWfWpEdx8sbjpWnyE/edit?usp=sharing",
+		"MR 430C":"https://docs.google.com/document/d/1Sf7BlOeObpXBODP6oGKvK3KTphCaSAZ5_UzvoeKyKTs/edit?usp=sharing",
+		"MR 431A":"https://docs.google.com/document/d/1uQK6t5ofGPbhY7O5rNht1m9qAcNV96DmCgCvuewXc_4/edit?usp=sharing",
+		"MR 433A":"https://docs.google.com/document/d/1zYTxuy_JQKAqxRrkDwkat_o8WW-CtBwHI9o69cYESLc/edit?usp=sharing",
+		"MR 433C":"https://docs.google.com/document/d/1F3B083BmgwmyEq6lhvV6eC1ZN3GsxDTCfsy6saThrRA/edit?usp=sharing",
+		"MR 433D":"https://docs.google.com/document/d/1kEHyt4mhPuoODfDAtYyqyKDSCSZVLj3581RkQzGxeHw/edit?usp=sharing",
+		"MR 434A":"https://docs.google.com/document/d/1zw_LH7qQ7FVvFFXRkx7CYovOuVuqvgKPQ3mFrJ65-34/edit?usp=sharing",
+		"MR 437A":"https://docs.google.com/document/d/13LwvhVrQ-WuNTPFjwxaYnLnTI_RPwr4q9u5UGyJ3zBM/edit?usp=sharing",
+		"MR 437C":"https://docs.google.com/document/d/1VLjh0-uPwaIvKYpfwpmHGgKBcnPq3oL13NFcekMLtHo/edit?usp=sharing",
+		"MR 438A":"https://docs.google.com/document/d/1tiRV2mfFg_6btMSJEEHhSRA_dAhksTX-zzZfQj8PEdo/edit?usp=sharing",
+		"MR 438C":"https://docs.google.com/document/d/1WbBsN1Rx1rjpN2XnJxtomcPyThjVKqM6WjC5kZ8DSsk/edit?usp=sharing",
+		"MR 439A":"https://docs.google.com/document/d/14w7bEYF4jsehJrvMM1iQ7plgxpGJhEKRWZXgXFKSuiI/edit?usp=sharing",
+		"MR 440":"https://docs.google.com/document/d/1aCjQPYcghNYFll52kjUhtwhGdI5cOoCnsK_eKAr3U34/edit?usp=sharing",
+		"MR 440A":"https://docs.google.com/document/d/1sETXVPoRgXDEaJQxfGrWdhYrJbt-cTNPiHmhR0pdmow/edit?usp=sharing",
+		"MR 440C":"https://docs.google.com/document/d/1gAU3zK7Tc1g_FvPpygmNqHV6r5W6nWDSoqTMFx3kERA/edit?usp=sharing",
+		"MR 440D":"https://docs.google.com/document/d/1EA36aXCPKpJne2_QutwZClwk7U1vSWI2KOxbH4ijaIg/edit?usp=sharing",
+		"MR 441":"https://docs.google.com/document/d/1Pmd069SwfhVcG3n9YVFiabfvOaWS_ZWJAlQQRl7HJAQ/edit?usp=sharing",
+		"MR 441A":"https://docs.google.com/document/d/1CVARpN_LjZ3AIIVd5J-U-r8gSUB3p6yxHck0KSHlwBA/edit?usp=sharing",
+		"MR 442":"https://docs.google.com/document/d/1sAIwAAbyXwQNF-zNZW7yv5hSAKL_6MYlnOMRp0ZTffk/edit?usp=sharing",
+		"MR 443A":"https://docs.google.com/document/d/1rubcjx-aajYkYECTwkVL5AAVn17YE0Xd65nUt_Kr7_M/edit?usp=sharing",
+		"MR 443C":"https://docs.google.com/document/d/1SeK57rWKeXuBJ3fUYzI8xw2Bc5cC_MJwFHEbo9xY5w0/edit?usp=sharing",
+		"MR 444C":"https://docs.google.com/document/d/1MPEt50rGxord3rVBck_I4IkOMlrb35zq_GBjj44E8Lo/edit?usp=sharing",
+		"MR 445":"https://docs.google.com/document/d/1-ea2sm5gG15XvUJYqknzjpzlgb_jsPDABG2kz1m-c3A/edit?usp=sharing",
+		"MR 445A":"https://docs.google.com/document/d/1iK1o0WFh9jKceWWRAfJgfUPUm5rR7jwQhE67_yO5OLk/edit?usp=sharing",
+		"MR 445C":"https://docs.google.com/document/d/1LvZb8VQKTaMHrpV1jnPHlmIIyQ2sBpS1LXPTfDmnq0E/edit?usp=sharing",
+		"MR 446":"https://docs.google.com/document/d/1pWUt6BVuA6rNU8InUQ-ml8eCKsZx8rRMbsueMOB1Nes/edit?usp=sharing",
+		"MR 446C":"https://docs.google.com/document/d/1bpP_17Q9fyb0Hu9HC0qsK0vh8-A0Bv6iCuvTurWppPE/edit?usp=sharing",
+		"MR 447A":"https://docs.google.com/document/d/18uNppZHGuUBsR6EUMBI9BcVmDqwyfuV78wXOLf4OaE4/edit?usp=sharing",
+		"MR 447C":"https://docs.google.com/document/d/1D95uZZfjoKSEOMmFXbgNKFGn43FxzB4O7Qk5DH_FCwc/edit?usp=sharing",
+		"MR 448":"https://docs.google.com/document/d/1bxH_0uUYzneM_1Hsxw792yTPNvHEW9Wjjzfsl_oVyhc/edit?usp=sharing",
+		"MR 448C":"https://docs.google.com/document/d/1AA9I6LAjRl2pMsdZATJ7OoHzZJoEer0OwP6gdTxiaxs/edit?usp=sharing",
+		"MR 450A":"https://docs.google.com/document/d/1YDC-2SeTlabmPKI71XwvF-9RLjOXGsFPKEfVLJa1VfA/edit?usp=sharing",
+		"MR 451A":"https://docs.google.com/document/d/18tiUOucQYhP18LnCyLChrifaWIf0Ue0_7jkEWJfTxRI/edit?usp=sharing",
+		"MR 452A":"https://docs.google.com/document/d/1EeH-7i3N4UZ06GVPiFzrEkZJiKd60jSlXATK_Qk3W9c/edit?usp=sharing",
+		"MR 453":"https://docs.google.com/document/d/1e1legIeND4oyRdsZUHoHFRyTFMzgFzhHM2nQVuukJT4/edit?usp=sharing",
+		"MR 453A":"https://docs.google.com/document/d/1y0WhBq7htqVVqKY5w8hWTf_jqDvdkepoJNjIG0CbJ24/edit?usp=sharing",
+		"MR 454A":"https://docs.google.com/document/d/1pCpz1DoQyoCATNUjk1Cex8h3quxoBQuMmBsKpClqQr0/edit?usp=sharing",
+		"MR 455A":"https://docs.google.com/document/d/14cNHJFBlw6oJ_jMtLQsuU9-qJgnpFqbqKbDGeVXWsAM/edit?usp=sharing",
+		"MR 455C":"https://docs.google.com/document/d/1GxuDefijHuBBfzBXtLuEHZs-sSBTLZP67vs6p8PfIiQ/edit?usp=sharing",
+		"MR 456A":"https://docs.google.com/document/d/1vMhPaRECfKZhfvCS7ySMLjPxgjdPkz0m4kSPX982GRU/edit?usp=sharing",
+		"MR 474C":"https://docs.google.com/document/d/1HY1kWPTw5740ZlZ6UHYhy_KTTvKJGsBu3mj1QoxqF4g/edit?usp=sharing",
+		"MR 490C":"https://docs.google.com/document/d/1RAeBy03-bTQfs1w-KmB80yq46Az8H4MOHyFPWD3mY-8/edit?usp=sharing",
+		
+		/*
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
+		MR 
 		// MRI 500 SPINE
 		
 		// MRI 600 VASCULAR
