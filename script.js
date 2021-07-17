@@ -75,11 +75,13 @@ function rearrange(rows, pos) {
 // Add CSV Data to the table
 function addProtocols() {	
 	for (i=0; i<CSVData.length; i++) {
-		if (PDFLinks[CSVData[i][0]] !== undefined)	// check to make sure a matching PDF link exists in the JSON array
+		if (PDFLinks[CSVData[i][0]] !== undefined)		// check to make sure a matching PDF link exists in the JSON array
 			CSVData[i][5] = "<a href=\""+PDFLinks[CSVData[i][0]].replace("edit?usp=sharing","export?format=pdf&attachment=false")+"\" target=\"_blank\">PDF</a>";	// if so, add PDF link in 6th column, replacing the default GDocs Sharing link with one that opens pdf format in a tab/window
-			// CSVData[i][5] = "<a href=\"#\" onclick=\"window.open(\'"+PDFLinks[CSVData[i][0]]+"\', \'_blank\', \'fullscreen=yes\'); return false;\">PDF</a>"; 	// this opens new window
 		
-		protocolList.add({
+		if (PDFLinksExtra[CSVData[i][0]] !== undefined)	// add extra PDF links if present
+			CSVData[i][5] += PDFLinksExtra[CSVData[i][0]];
+
+		protocolList.add({								// populate the main table with protocol entries
 			protNum: CSVData[i][0],
 			protName: CSVData[i][1],
 			protContrast: CSVData[i][2],
@@ -296,7 +298,8 @@ var PDFLinks =
 		"MR 300A":"https://docs.google.com/document/d/1WedWnGgqGXaf4xKfMnG7Zqmb1KHtyMVmNn1PHOm2J7w/edit?usp=sharing",
 		"MR 300C":"https://docs.google.com/document/d/1aBHkjOIUsWU6ZSxDP7TIR51C3uH-QILhX9dHCeyudpQ/edit?usp=sharing",
 		"MR 301C":"https://docs.google.com/document/d/1gMG1rMnxbnC3E2LFpHKOcwKLXFd_Z7lvDmu5ZSGaGm4/edit?usp=sharing",
-		"MR 302C":"https://docs.google.com/document/d/1o9ZJ-u7I5kb3ib0VQpxZf0QIAAlkTf403hnm0UNBgYM/edit?usp=sharing",
+		"MR 302C":"https://docs.google.com/document/d/1WsTuQE__NMTeopN-Xps9H_mFzPq5MjHvnknjksygT54/edit?usp=sharing",
+		"MR 302C F/U":"https://docs.google.com/document/d/1o9ZJ-u7I5kb3ib0VQpxZf0QIAAlkTf403hnm0UNBgYM/edit?usp=sharing",
 		"MR 303C":"https://docs.google.com/document/d/1NC7R44o9Z1OAFImBD_0Ezn4eGJHCfsSIWiNOe2YYz48/edit?usp=sharing",
 		"MR 304C":"https://docs.google.com/document/d/1jyZoz30EaVtw-f2N0brRr7L93EEtA4lY5ZUIAqpbhZE/edit?usp=sharing",
 		"MR 305C":"https://docs.google.com/document/d/1f7vRNyNayjRGvk9YaNFIT6P9VG9JdAaDORp6Y8JwtOA/edit?usp=sharing",
@@ -414,6 +417,7 @@ var PDFLinks =
 		"MR 610C":"https://docs.google.com/document/d/19vPQXyax2hUCcwJA2oNBH8dF1vJfgAbiMTmBSoT91M0/edit?usp=sharing",
 		"MR 620C":"https://docs.google.com/document/d/1QjGJe06RaEb6X1SKlhy40XSPVlCV9iylq62dAmDDRzo/edit?usp=sharing",
 		"MR 621C":"https://docs.google.com/document/d/1sobW3FjeshIMIZkXhut-mDCv0HVjWLMFCumsk3Jmzag/edit?usp=sharing",
+		"MR 630A":"https://docs.google.com/document/d/13n_x5dCq9JRVHdtYWZJpj0-aYdvr5iuJpBsH4BGGOKg/edit?usp=sharing",
 		"MR 630C":"https://docs.google.com/document/d/1Dq7EOWhOfuaTzesjPaBsPbIm4PSyvZQD_WpRovjTAq0/edit?usp=sharing",
 		"MR 632C":"https://docs.google.com/document/d/1jBydg7XM7vG35RxqcHmO_4v9iUB3f0Fwbl5ZcBKo4jQ/edit?usp=sharing",
 		"MR 640C":"https://docs.google.com/document/d/1i-cO9jWZYA7ZdbkglxKu8sfOgCwgww_ZXasSVoWCRNQ/edit?usp=sharing",
@@ -455,3 +459,21 @@ var PDFLinks =
 
 	};
 
+// JSON array of evergreen PDF links to extra protocol info, e.g. manufacturer documents. Within GDrive folder, right click on the protocol GDoc, Get Link, Copy Link
+// These values have been edited to give specific names to the links
+var PDFLinksExtra = 
+	{
+		// CT extras
+		"CT 122A":' | <a href="https://docs.google.com/document/d/1rUd-x0xb4T9s5YIBCNkm_GfM3EphxeusY_hUwJ8VcwE/export?format=pdf&attachment=false" target="_blank">Medtronic</a>',
+		"CT 124A":' | <a href="https://drive.google.com/file/d/1p34E_nMEl0sRce8e-a_zBNRlP30Bjh5c/view" target="_blank">Stryker</a>',
+		"CT 390A":' | <a href="https://docs.google.com/document/d/1c6lAWAOrjiNQ-hykF7FM6imbvmIQ-VJtwnfIybk-T9A/export?format=pdf&attachment=false" target="_blank">Oral Prep</a>',
+		"CT 420A":' | <a href="https://drive.google.com/file/d/13nuIfS0bmexNT4OE2qy5hdE9WnXRBBUi/view" target="_blank">Conformis</a>', // error
+		"CT 421A":' | <a href="https://drive.google.com/file/d/1Zytkh3fBTzEkoeCP0my1nGG8oMoZesU-/view" target="_blank">Zimmer</a>',
+		"CT 422A":' | <a href="https://drive.google.com/file/d/1-UPnlL3Ob-NRDSNyd0-DuV8uhcnLuXkG/view" target="_blank">Zimmer</a>',
+		"CT 424A":' | <a href="https://drive.google.com/file/d/1Oq24eO7Vz1lw98Hq38LC0bxBkW-RPa_U/view" target="_blank">Depuy</a>',
+		
+		// MRI extras
+		"MR 307A":' | <a href="https://drive.google.com/file/d/197HlpcWeGvQl0mHqrIMaWCn2JqyAQR5Y/view" target="_blank">Univ Rennes 2019</a>',
+		"MR 425C":' | <a href="https://docs.google.com/document/d/176wYaLrDwgyxUCo5-6t--EGisr3hBp_B6UMJAbfevJE/export?format=pdf&attachment=false" target="_blank">Any Other Joint</a>',
+		"MR 524A":' | <a href="https://drive.google.com/file/d/1i5wnVUmUzkeWxAMFN87_yDa5ydNkXTwl/view" target="_blank">Nevro White Paper 2018</a>',
+	};
