@@ -1,26 +1,19 @@
 // Get CT CSV first. created by opening "CT protocols list" GSheet, Select All, Copy, Paste into Excel, Save as CSV.
-var request = new XMLHttpRequest();
-request.open('GET', 'MRG CT protocols.csv');
-request.overrideMimeType("text/plain");
-request.send();
-
-request.onreadystatechange = function() {
-	if (request.readyState === 4) {	// have to wait for AJAX call to complete
-		CTData = CSVtoArray(request.responseText);	
-
-		// (once CT CSV is loaded...) get MR CSV. it's more difficult to do for loops for the XMLHttpRequests. maybe both CT and MRI could be loaded by doing .open('GET',url,false)?
-		var request2 = new XMLHttpRequest();
-		request2.open('GET', 'MRG MRI protocols.csv');
-		request2.overrideMimeType("text/plain");
-		request2.send();
-
-		request2.onreadystatechange = function() {
-			if (request2.readyState === 4) { 					// have to wait for AJAX call to complete
-				MRData = CSVtoArray(request2.responseText);
-
-				trimCSV(CTData);
-				MRData.splice(0,1);								// remove MR header row
-				trimCSV(MRData);
+// can try using fetch('google.com/xx', {mode: 'no-cors'}) then "Cache API"... to get the evergreen CSV
+fetch('MRG CT protocols.csv')	// fetch is not compatible with any version or IE, and not compatible with Chrome/Firefox/Safari older than 2017. https://caniuse.com/?search=fetch
+	.then(function(response1) {
+		return response1.text();
+	})
+	.then(function(resText1) {
+		CTData = trimCSV(CSVtoArray(resText1));
+		
+		fetch('MRG MR protocols.csv')		// "chaining promises". get MR CSV
+			.then(function(response2) {
+				return response2.text();
+			})
+			.then(function(resText2) {
+				MRData = trimCSV(CSVtoArray(resText2));
+				MRData.splice(0,1);
 
 				for (i=0; i<CTData.length; i++)	
 					CTData[i][0] = "CT " + CTData[i][0]; 		// prepend "CT " to protocol # - this crashes if placed in trimCSV
@@ -40,14 +33,12 @@ request.onreadystatechange = function() {
 				// remove blank and undefined rows from the table
 				protocolList.remove('protNum','');
 				protocolList.remove('protNum',undefined);
-			}
-		}
-	}
-};
+			})
+	})
 
 
 // FUNCTIONS
-// Convert the XML responseText (raw data of CSV file) into an array
+// Convert the raw data of CSV file into an array
 const CSVtoArray = (data, delimiter = ',', omitFirstRow = false) =>
 	data
 	  .slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
