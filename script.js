@@ -10,7 +10,7 @@ request.onreadystatechange = function() {
 
 		// (once CT CSV is loaded...) get MR CSV. it's more difficult to do for loops for the XMLHttpRequests. maybe both CT and MRI could be loaded by doing .open('GET',url,false)?
 		var request2 = new XMLHttpRequest();
-		request2.open('GET', 'MRG MRI protocols.csv');
+		request2.open('GET', 'MRG MR protocols.csv');
 		request2.overrideMimeType("text/plain");
 		request2.send();
 
