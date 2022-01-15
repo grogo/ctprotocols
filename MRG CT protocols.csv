@@ -120,7 +120,7 @@
 620C,CTA Chest Aorta,without and with,chest,,,,,,,,,,,,,,,,,,,,,,
 621B,CTA PE Chest,with only,chest,,,,,,,,,,,,,,,,,,,,,,
 622C,CTA Chest Stent graft,without and with,chest,,,,,,,,,,,,,,,,,,,,,,
-623C,CTA Pulmonary Vein,,,Pre-ablation for atrial fibrillation AFib,,,,,,,,,,,,,,,,,,,,,
+623B,CTA Pulmonary Vein,with,chest,Pre-ablation for atrial fibrillation AFib,,,,,,,,,,,,,,,,,,,,,
 624C,CTA Chest (unequal BP in arms),without and with,chest,,,,,,,,,,,,,,,,,,,,,,
 625C,CTA Chest (Subclavian Stenosis),without and with,,,,,,,,,,,,,,,,,,,,,,,
 626C,CTA Chest pacemaker leads replacement,without and with,,,,,,,,,,,,,,,,,,,,,,,
