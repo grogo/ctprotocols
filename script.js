@@ -175,6 +175,7 @@ var PDFLinks =
 		"CT 425A":"https://docs.google.com/document/d/1OBJagXHqyRTGd4N3tquq0boJIJHg-WO9oOpPnKkgXuo/edit?usp=sharing",
 		"CT 426A":"https://docs.google.com/document/d/1ah7hrqBbHx8F3kUwvKaQMqYnNTHx9fcZWfy6Qy4ZKCA/edit?usp=sharing",
 		"CT 427A":"https://docs.google.com/document/d/1PIOoStDfuWDxCxhWA3EJINEg85YR2s1YwVc2PNuIsG0/edit?usp=sharing",
+		"CT 428A":"https://docs.google.com/document/d/1GqkVwb8m8hVrXqMX-pOyWRbIbjLBJZGHDHBe0mRyr8I/edit?usp=sharing",
 		
 		// CT 500 SPINE
 		"CT 500A":"https://docs.google.com/document/d/1HQxBqmi1EgoQobjgVp1Nt9rqwhkgO6WvfybPGnwQUJs/edit?usp=sharing",
@@ -404,6 +405,7 @@ var PDFLinks =
 		"MR 512C":"https://docs.google.com/document/d/1_XorGFQL_EKhSz8F0mm2k63Dht6ds5on4HmOjqcP-1U/edit?usp=sharing",
 		"MR 520A":"https://docs.google.com/document/d/1CxY3VFceurYgrqT0sR-ooYchRg7VZoUU02QQbNb_zJc/edit?usp=sharing",
 		"MR 520C":"https://docs.google.com/document/d/1YP7kGwCbLiscngV6Joj77D80XVxWw_lAYgrYIQwXY8o/edit?usp=sharing",
+		"MR 522C":"",
 		"MR 523A":"https://docs.google.com/document/d/12o2pm59kfL42ZAd4uDLb4a6_PXmq0jZHIZBijR-uPGU/edit?usp=sharing",
 		"MR 523C":"https://docs.google.com/document/d/16RcAhscQvMJDx1TXI7TQ145CtFEa_H8X9piBtBue-uc/edit?usp=sharing",
 		"MR 524A":"https://docs.google.com/document/d/1lw2WSezJesRJpDotS_5mM0lDrx4yhuK9EpMQHaVm9GQ/edit?usp=sharing",
