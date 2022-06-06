@@ -134,7 +134,7 @@
 640C,CTA Abdomen and Pelvis,without and with,abdomen + pelvis,,,,,,,,,,,,,,,,,,,,,,
 641C,CTA Abdomen and Pelvis (Stent Graft),without and with,abdomen + pelvis,stent graft,,,,,,,,,,,,,,,,,,,,,
 642B,CTA DIEP FLAP (SAC and FOLSOM),with,abdomen + pelvis,preop breast reconstruction,,,,,,,,,,,,,,,,,,,,,
-643C,CTA Abdomen and Pelvis,without and with,abdomen + pelvis,,,,,,,,,,,,,,,,,,,,,,
+643C,CTA Abdomen,without and with,abdomen only,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,
 650C,CTA Aorta and Runoff,without and with,abdomen + pelvis + extremities,?,,,,,,,,,,,,,,,,,,,,,
 660C,CTA,without and with,other body region,requiring specific protocol by rad,,,,,,,,,,,,,,,,,,,,,
