@@ -52,6 +52,7 @@
 ,,,,,,,,,,,,,,,,,,,,,,,,,
 310A,Abdomen and Pelvis Routine without,without,abdomen + pelvis,Routine without,,,,,,,,,,,,,,,,,,,,,
 310B,Abdomen and Pelvis with,with,abdomen + pelvis,Routine with. Specify oral in comments,,,,,,,,,,,,,,,,,,,,,
+311C,Abdomen and Pelvis with rectal,without and with, abdomen + pelvis, with rectal contrast see protocol for details,,,,,,,,,,,,,,,,,,,,,
 312A,Stone Protocol,without,,Kidney stone protocol,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,
 321C,Multiphase Liver with Pelvis,without and with,abdomen + pelvis,4 phase: Pelvis on portal venous,,,,,,,,,,,,,,,,,,,,,

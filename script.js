@@ -144,6 +144,7 @@ var PDFLinks =
 		"CT 309C":"https://docs.google.com/document/d/1Z56zUU8ZwvVmrDkZVIjCM4mq5VsrJHIut8mPssq4iSA/edit?usp=sharing",
 		"CT 310A":"https://docs.google.com/document/d/1TM_XICQSk26IvzKg3J3KLLR29DwHgEvu2StXPaiHg2I/edit?usp=sharing",
 		"CT 310B":"https://docs.google.com/document/d/12BHyEqZXUZa94Tv2jGmmNUWQy1qkHaBHVK2p1nERjb8/edit?usp=sharing",
+		"CT 311C":"https://docs.google.com/document/d/1nvfOj7AP6D3449HhMqQn5fGinChQ5vNKjHPXq9Afkjk/edit?usp=sharing",
 		"CT 312A":"https://docs.google.com/document/d/1E7QAtp7MehsyWD2oc6JzyMJtMfL0dZc7ckGTJDp1Qjg/edit?usp=sharing",
 		"CT 321C":"https://docs.google.com/document/d/1YxDAMlSNWH_davgHhoLMCW2otFMafIvbAMcYjuPq61o/edit?usp=sharing",
 		"CT 323C":"https://docs.google.com/document/d/1wU7iyWDgETn-MehFwwqGSv7LB7nz3VQtfSVrm3BP-ng/edit?usp=sharing",
