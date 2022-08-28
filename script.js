@@ -114,7 +114,7 @@ var PDFLinks =
 		"CT 120A":"https://docs.google.com/document/d/1097f_bWlyPUP6mKWKWXHcCo8BHRiw6mOjDDRzYx_MxM/edit?usp=sharing",
 		"CT 120B":"https://docs.google.com/document/d/1cd1-xoRPp0auIR3mhWIm5EUGxT12Dk22XzAMshrLFYM/edit?usp=sharing",
 		"CT 121A":"https://docs.google.com/document/d/1tTRMktfVie2PM9Zm4jsElbRlXY1DKR6SRp3-n3qDLtM/edit?usp=sharing",
-		"CT 122A":"https://docs.google.com/document/d/1rUd-x0xb4T9s5YIBCNkm_GfM3EphxeusY_hUwJ8VcwE/edit?usp=sharing",
+		"CT 122A":"https://docs.google.com/document/d/1BP_DA9vh1m-gNI6kTL7Ll1Y0UE4V-9gw9JCpKVWiexM/edit?usp=sharing",
 		"CT 123A":"https://docs.google.com/document/d/1ZfX9qcNEiwPGlqYZRDbV_sa0FNpnjBIbdJzLsO_-roQ/edit?usp=sharing",
 		"CT 124A":"https://docs.google.com/document/d/1WugyPNjP-s-zIVfPC4YTBXwv9nyak6d3x0yOE8D7Cxg/edit?usp=sharing",
 		"CT 125C":"https://docs.google.com/document/d/15IPeXsFiGrKqtXwDJ38LCsOqhLjDUPt0fIEpC8LwMoY/edit?usp=sharing",
@@ -177,6 +177,7 @@ var PDFLinks =
 		"CT 426A":"https://docs.google.com/document/d/1ah7hrqBbHx8F3kUwvKaQMqYnNTHx9fcZWfy6Qy4ZKCA/edit?usp=sharing",
 		"CT 427A":"https://docs.google.com/document/d/1PIOoStDfuWDxCxhWA3EJINEg85YR2s1YwVc2PNuIsG0/edit?usp=sharing",
 		"CT 428A":"https://docs.google.com/document/d/1GqkVwb8m8hVrXqMX-pOyWRbIbjLBJZGHDHBe0mRyr8I/edit?usp=sharing",
+		"CT 430A":"https://docs.google.com/document/d/1M0tNtjl1AoFyrnkMm5Ll9nckfkZFW5mxhUEBgzMlnwc/edit?usp=sharing",
 		
 		// CT 500 SPINE
 		"CT 500A":"https://docs.google.com/document/d/1HQxBqmi1EgoQobjgVp1Nt9rqwhkgO6WvfybPGnwQUJs/edit?usp=sharing",
@@ -397,6 +398,7 @@ var PDFLinks =
 		"MR 455A":"https://docs.google.com/document/d/14cNHJFBlw6oJ_jMtLQsuU9-qJgnpFqbqKbDGeVXWsAM/edit?usp=sharing",
 		"MR 455C":"https://docs.google.com/document/d/1GxuDefijHuBBfzBXtLuEHZs-sSBTLZP67vs6p8PfIiQ/edit?usp=sharing",
 		"MR 456A":"https://docs.google.com/document/d/1vMhPaRECfKZhfvCS7ySMLjPxgjdPkz0m4kSPX982GRU/edit?usp=sharing",
+		"MR 457A":"https://docs.google.com/document/d/17q6b1v3dqTtgtjrRisJ44YJH9oMkIAVf61yS9_xaJMU/edit?usp=sharing",
 		"MR 474C":"https://docs.google.com/document/d/1HY1kWPTw5740ZlZ6UHYhy_KTTvKJGsBu3mj1QoxqF4g/edit?usp=sharing",
 		"MR 490C":"https://docs.google.com/document/d/1RAeBy03-bTQfs1w-KmB80yq46Az8H4MOHyFPWD3mY-8/edit?usp=sharing",
 		
