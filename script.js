@@ -48,7 +48,7 @@ request.onreadystatechange = function() {
 
 // FUNCTIONS
 // Convert the XML responseText (raw data of CSV file) into an array
-const CSVtoArray = (data, delimiter = ',', omitFirstRow = false) =>
+const CSVtoArray = (data, delimiter = ';', omitFirstRow = false) =>
 	data
 	  .slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
 	  .split('\n')
@@ -133,6 +133,7 @@ var PDFLinks =
 		"CT 212A":"https://docs.google.com/document/d/1OjJgnPc4mKGUlZHh490BAqZNpBOE6l-ql-kmZQJku_U/edit?usp=sharing",
 		"CT 213A":"https://docs.google.com/document/d/1uoDL5NlquFx_9WL1tUe6Llzx19pH9XYlU6AitK2peMw/edit?usp=sharing",
 		"CT 215A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
+		"CT 221A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
 
 		// CT 300 ABDOMEN PELVIS
 		"CT 300A":"https://docs.google.com/document/d/1OPnOj6NztXsF-eoAcZst6bNbonFMq99Z4sRUWLfX8Cw/edit?usp=sharing",
