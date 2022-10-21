@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"rainbow_csv.autodetect_separators": [
+			"TAB",
+			";",
+			"|"
+		]
+	}
+}
