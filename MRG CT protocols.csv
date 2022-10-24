@@ -3,7 +3,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 100;Head and Neck;;;;;;;;;;;;;;;;;;;;;;;;
 100A;Head;without;;trauma hemorrhage, headache, altered status, dementia, stroke;;;;;;;;;;;;;;;;;;;;;
-100C;Head;with and without;;brain mass (can't have MRI), venous thrombosis ;yes;;;;;;;;;;;;;;;;;;;;
+100C;Head;with and without;;brain mass (can't have MRI), venous thrombosis ;;;;;;;;;;;;;;;;;;;;;
 102A;3D Head;without;;pediatric;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 110A;Orbits;without;;;;;;;;;;;;;;;;;;;;;;;
@@ -12,7 +12,7 @@
 120A;Sinus;without;;;;;;;;;;;;;;;;;;;;;;;
 120B;Sinus;with;;Maxillofacial with;;;;;;;;;;;;;;;;;;;;;
 121A;Limited Sinus;without;;;;;;;;;;;;;;;;;;;;;;;
-122A;Sinus Stealth/Fusion;without;;;yes;;;;;;;;;;;;;;;;;;;;
+122A;Sinus Stealth/Fusion;without;;;;;;;;;;;;;;;;;;;;;;;
 123A;Trauma Maxillofacial;without;;trauma, facial fractures, nasal fracture (to include mandible and maxilla);;;;;;;;;;;;;;;;;;;;;
 124A;Stryker Sinus;without;;;;;;;;;;;;;;;;;;;;;;;
 125C;Cisternogram;without and with;;;;;;;;;;;;;;;;;;;;;;;
@@ -27,8 +27,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 200;Thorax;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
-200A;Chest Routine;without;;pneumonia, cancer, fibrosis, dsypnea;yes;;;;;;;;;;;;;;;;;;;;
-200B;Chest Routine;with;;pneumonia, cancer, vein thrombosis, mediastinal mass or adenopathy;yes;;;;;;;;;;;;;;;;;;;;
+200A;Chest Routine;without;;pneumonia, cancer, fibrosis, dsypnea;;;;;;;;;;;;;;;;;;;;;
+200B;Chest Routine;with;;pneumonia, cancer, vein thrombosis, mediastinal mass or adenopathy;;;;;;;;;;;;;;;;;;;;;
 210A;Low Dose CT;without;;incidental nodule follow-up (LDCT);;;;;;;;;;;;;;;;;;;;;
 211A;Lung Screen;without;;low dose initial or follow-up (screening only);;;;;;;;;;;;;;;;;;;;;
 212A;Regular Dose CT - f/u to lung screening;without;;use as 3-6 mo f/u for lung screen. REGULAR dose CT ordered;;;;;;;;;;;;;;;;;;;;;
@@ -65,7 +65,7 @@
 341C;Urogram 3 Phase;without and with;abdomen + pelvis;Hematuria, suspected renal or bladder or ureteral mass, hydronephrosis, known cancer of bladder or ureter, older patient. Kidney Donor Evaluation,;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 350B;CT Enterography;with;abdomen + pelvis;with IV + Volumen/Breeza PO;Inflammatory Bowel disease (IBD), Crohns Disease, Ulcerative Colitis,;;;;;;;;;;;;;;;;;;;;
-351C;GI Bleeding;without and with;abdomen + pelvis;(no PO of any kind) GI Bleed, Melena, Hematemesis, Anemia, Mesenteric Ischemia, Ischemic Colitis;;yes;;;;;;;;;;;;;;;;;;
+351C;GI Bleeding;without and with;abdomen + pelvis;(no PO of any kind) GI Bleed, Melena, Hematemesis, Anemia, Mesenteric Ischemia, Ischemic Colitis;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 370A;Pelvis;without;;Inguinal hernia;;;;;;;;;;;;;;;;;;;;;
 370B;Pelvis;with;;Pelvic abscess, Pelvic Mass, Hernia;;;;;;;;;;;;;;;;;;;;;
@@ -90,7 +90,7 @@
 421A;Zimmer Knee;without;;;PDF;;;;;;;;;;;;;;;;;;;;
 422A;Zimmer Shoulder;without;;;PDF;;;;;;;;;;;;;;;;;;;;
 423A;BLUEPRINT Shoulder;without;;;;;;;;;;;;;;;;;;;;;;;
-424A;DePuy Pelvis;without;;;yes;;;;;;;;;;;;;;;;;;;;
+424A;DePuy Pelvis;without;;;;;;;;;;;;;;;;;;;;;;;
 425A;BLUEPRINT Shoulder;without;;;;;;;;;;;;;;;;;;;;;;;
 426A;Mako Knee;without;;;;;;;;;;;;;;;;;;;;;;;
 427A;Mako Hip;without;;;;;;;;;;;;;;;;;;;;;;;
@@ -113,7 +113,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 600C;CTA Head;with and without;head only;without dry head / with CTA head;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
-611B;CTA Neck / Carotid;with only;neck only;;yes;;;;;;;;;;;;;;;;;;;;
+611B;CTA Neck / Carotid;with only;neck only;;;;;;;;;;;;;;;;;;;;;;
 611C;CTA Neck / Carotid;without and with;neck only;(Dr. Maidan special);;;;;;;;;;;;;;;;;;;;;
 612C;CTA Head and Neck;without and with;head + neck;without head / with head and neck;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
