@@ -194,6 +194,7 @@ var PDFLinks =
 		"CT 611B":"https://docs.google.com/document/d/1EMHYUyIc1zwQtyd_EYk72EK6bNmEbqe7nFRoJvKlhWI/edit?usp=sharing",
 		"CT 611C":"https://docs.google.com/document/d/1VS8_G9t-PPUbnwmx-afhIzjL7FQSV5Fsybz2nZEFv1c/edit?usp=sharing",
 		"CT 612C":"https://docs.google.com/document/d/1zsJjxESMY1dXq0WhOjFMGTEij8Cvo7OLX0A8tMdW2cs/edit?usp=sharing",
+		"CT 620B":"https://docs.google.com/document/d/1mSjE-hkxCTtZTBnGNeGx87-5AhjbWEUzujxB75qmMM0/edit?usp=sharing",
 		"CT 620C":"https://docs.google.com/document/d/1kDNagtkZS27KIkSe2CsSwilEVMezXLMRL4Gaw9bDtKI/edit?usp=sharing",
 		"CT 621B":"https://docs.google.com/document/d/13l3IloOvTzbd2tADn1qBZn5Jy75JVVOyvORqjU6adi4/edit?usp=sharing",
 		"CT 622C":"https://docs.google.com/document/d/12r8yl_n66QgzLz_8f5cl4hj1V2buJhmXYRi6Q4aM__M/edit?usp=sharing",

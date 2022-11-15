@@ -117,6 +117,7 @@
 611C;CTA Neck / Carotid;without and with;neck only;(Dr. Maidan special);;;;;;;;;;;;;;;;;;;;;
 612C;CTA Head and Neck;without and with;head + neck;Stroke/TIA, vertebrobasilar insufficiency;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
+620B;CTA Chest Aorta;with;chest;evaluation of suspected or known aortic pathology, use ECG gating if prior ascending aortic or root repair;;;;;;;;;;;;;;;;;;;;;
 620C;CTA Chest Aorta;without and with;chest;evaluation of suspected or known aortic pathology, use ECG gating if prior ascending aortic or root repair;;;;;;;;;;;;;;;;;;;;;
 621B;CTA PE Chest;with only;chest;evaluate or follow up pulmonary embolism, dyspnea, chest pain;;;;;;;;;;;;;;;;;;;;;
 622C;CTA Chest Stent graft;without and with;chest;prior thoracic aortic stent graft repair;;;;;;;;;;;;;;;;;;;;;
