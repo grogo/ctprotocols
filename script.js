@@ -48,7 +48,7 @@ request.onreadystatechange = function() {
 
 // FUNCTIONS
 // Convert the XML responseText (raw data of CSV file) into an array
-const CSVtoArray = (data, delimiter = ',', omitFirstRow = false) =>
+const CSVtoArray = (data, delimiter = ';', omitFirstRow = false) =>
 	data
 	  .slice(omitFirstRow ? data.indexOf('\n') + 1 : 0)
 	  .split('\n')
@@ -114,7 +114,7 @@ var PDFLinks =
 		"CT 120A":"https://docs.google.com/document/d/1097f_bWlyPUP6mKWKWXHcCo8BHRiw6mOjDDRzYx_MxM/edit?usp=sharing",
 		"CT 120B":"https://docs.google.com/document/d/1cd1-xoRPp0auIR3mhWIm5EUGxT12Dk22XzAMshrLFYM/edit?usp=sharing",
 		"CT 121A":"https://docs.google.com/document/d/1tTRMktfVie2PM9Zm4jsElbRlXY1DKR6SRp3-n3qDLtM/edit?usp=sharing",
-		"CT 122A":"https://docs.google.com/document/d/1rUd-x0xb4T9s5YIBCNkm_GfM3EphxeusY_hUwJ8VcwE/edit?usp=sharing",
+		"CT 122A":"https://docs.google.com/document/d/1BP_DA9vh1m-gNI6kTL7Ll1Y0UE4V-9gw9JCpKVWiexM/edit?usp=sharing",
 		"CT 123A":"https://docs.google.com/document/d/1ZfX9qcNEiwPGlqYZRDbV_sa0FNpnjBIbdJzLsO_-roQ/edit?usp=sharing",
 		"CT 124A":"https://docs.google.com/document/d/1WugyPNjP-s-zIVfPC4YTBXwv9nyak6d3x0yOE8D7Cxg/edit?usp=sharing",
 		"CT 125C":"https://docs.google.com/document/d/15IPeXsFiGrKqtXwDJ38LCsOqhLjDUPt0fIEpC8LwMoY/edit?usp=sharing",
@@ -133,6 +133,7 @@ var PDFLinks =
 		"CT 212A":"https://docs.google.com/document/d/1OjJgnPc4mKGUlZHh490BAqZNpBOE6l-ql-kmZQJku_U/edit?usp=sharing",
 		"CT 213A":"https://docs.google.com/document/d/1uoDL5NlquFx_9WL1tUe6Llzx19pH9XYlU6AitK2peMw/edit?usp=sharing",
 		"CT 215A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
+		"CT 221A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
 
 		// CT 300 ABDOMEN PELVIS
 		"CT 300A":"https://docs.google.com/document/d/1OPnOj6NztXsF-eoAcZst6bNbonFMq99Z4sRUWLfX8Cw/edit?usp=sharing",
@@ -144,11 +145,13 @@ var PDFLinks =
 		"CT 309C":"https://docs.google.com/document/d/1Z56zUU8ZwvVmrDkZVIjCM4mq5VsrJHIut8mPssq4iSA/edit?usp=sharing",
 		"CT 310A":"https://docs.google.com/document/d/1TM_XICQSk26IvzKg3J3KLLR29DwHgEvu2StXPaiHg2I/edit?usp=sharing",
 		"CT 310B":"https://docs.google.com/document/d/12BHyEqZXUZa94Tv2jGmmNUWQy1qkHaBHVK2p1nERjb8/edit?usp=sharing",
+		"CT 311C":"https://docs.google.com/document/d/1nvfOj7AP6D3449HhMqQn5fGinChQ5vNKjHPXq9Afkjk/edit?usp=sharing",
 		"CT 312A":"https://docs.google.com/document/d/1E7QAtp7MehsyWD2oc6JzyMJtMfL0dZc7ckGTJDp1Qjg/edit?usp=sharing",
 		"CT 321C":"https://docs.google.com/document/d/1YxDAMlSNWH_davgHhoLMCW2otFMafIvbAMcYjuPq61o/edit?usp=sharing",
 		"CT 323C":"https://docs.google.com/document/d/1wU7iyWDgETn-MehFwwqGSv7LB7nz3VQtfSVrm3BP-ng/edit?usp=sharing",
 		"CT 324C":"https://docs.google.com/document/d/16fwodiWXAD0JSt1AH8wNkIwDBCc3EFQoNgbaTT6TpO0/edit?usp=sharing",
 		"CT 329C":"https://docs.google.com/document/d/1_gYQwc_TAgFHlrMU22njNCiED8-Ad848qSMbRAb1N8M/edit?usp=sharing",
+	    "CT 330B":"https://docs.google.com/document/d/17d0c_N14agBMdrA_Uz_CZhiM1R_qVt5q3k7cLAfvxHA/edit?usp=sharing",
 		"CT 340C":"https://docs.google.com/document/d/1kmQODKnhaVBBoG9SHohEbuO3qsu_O_kNWX_OHbE-L9A/edit?usp=sharing",
 		"CT 341C":"https://docs.google.com/document/d/1CLKZRAJP7MShOnJnlnNo9hbua4qk4UveD6cJE-yJdUc/edit?usp=sharing",
 		"CT 350B":"https://docs.google.com/document/d/14ggXe3F22h3B7G8BdVWA9gATN5q5kAbtwGBk5N67r-g/edit?usp=sharing",
@@ -174,6 +177,8 @@ var PDFLinks =
 		"CT 425A":"https://docs.google.com/document/d/1OBJagXHqyRTGd4N3tquq0boJIJHg-WO9oOpPnKkgXuo/edit?usp=sharing",
 		"CT 426A":"https://docs.google.com/document/d/1ah7hrqBbHx8F3kUwvKaQMqYnNTHx9fcZWfy6Qy4ZKCA/edit?usp=sharing",
 		"CT 427A":"https://docs.google.com/document/d/1PIOoStDfuWDxCxhWA3EJINEg85YR2s1YwVc2PNuIsG0/edit?usp=sharing",
+		"CT 428A":"https://docs.google.com/document/d/1GqkVwb8m8hVrXqMX-pOyWRbIbjLBJZGHDHBe0mRyr8I/edit?usp=sharing",
+		"CT 430A":"https://docs.google.com/document/d/1M0tNtjl1AoFyrnkMm5Ll9nckfkZFW5mxhUEBgzMlnwc/edit?usp=sharing",
 		
 		// CT 500 SPINE
 		"CT 500A":"https://docs.google.com/document/d/1HQxBqmi1EgoQobjgVp1Nt9rqwhkgO6WvfybPGnwQUJs/edit?usp=sharing",
@@ -189,6 +194,7 @@ var PDFLinks =
 		"CT 611B":"https://docs.google.com/document/d/1EMHYUyIc1zwQtyd_EYk72EK6bNmEbqe7nFRoJvKlhWI/edit?usp=sharing",
 		"CT 611C":"https://docs.google.com/document/d/1VS8_G9t-PPUbnwmx-afhIzjL7FQSV5Fsybz2nZEFv1c/edit?usp=sharing",
 		"CT 612C":"https://docs.google.com/document/d/1zsJjxESMY1dXq0WhOjFMGTEij8Cvo7OLX0A8tMdW2cs/edit?usp=sharing",
+		"CT 620B":"https://docs.google.com/document/d/1mSjE-hkxCTtZTBnGNeGx87-5AhjbWEUzujxB75qmMM0/edit?usp=sharing",
 		"CT 620C":"https://docs.google.com/document/d/1kDNagtkZS27KIkSe2CsSwilEVMezXLMRL4Gaw9bDtKI/edit?usp=sharing",
 		"CT 621B":"https://docs.google.com/document/d/13l3IloOvTzbd2tADn1qBZn5Jy75JVVOyvORqjU6adi4/edit?usp=sharing",
 		"CT 622C":"https://docs.google.com/document/d/12r8yl_n66QgzLz_8f5cl4hj1V2buJhmXYRi6Q4aM__M/edit?usp=sharing",
@@ -215,9 +221,11 @@ var PDFLinks =
 		"CT 673C":"https://docs.google.com/document/d/1-FgWzBic39PdXYs2Oh_RtHgPy4w_PgmJggzEO9El1tc/edit?usp=sharing",
 		"CT 680A":"https://docs.google.com/document/d/1K3acxrWrrt0ln4yvbJ1oOZv5SIYpsJcufHULO_iZMSE/edit?usp=sharing",
 		"CT 681A":"https://docs.google.com/document/d/1_Eh94stzLryxz7LTsIXJ6dCEvDPfo-NOh7YdKCYuwd0/edit?usp=sharing",
+		"CT 681B":"https://docs.google.com/document/d/158q9h0aKS8WjdC6_If-0s2v9zl3uJj66G6TCzQHTkMQ/edit?usp=sharing",
 		"CT 682B":"https://docs.google.com/document/d/1z7TrRzEoht9K9G0u6J-1Nohqgl58ZurbFhsDPxsy_7g/edit?usp=sharing",
 		"CT 683C":"https://docs.google.com/document/d/1nU2Z0XBTxj5j_Zy2EToqZ_8zVH8jAttf8uGCEx5fBF4/edit?usp=sharing",
 		"CT 684B":"https://docs.google.com/document/d/1fNydno5oIE84zEPiVB6d1HzWtE213jKN94aDF_J7tnM/edit?usp=sharing",
+		"CT 685B":"https://docs.google.com/document/d/1kY6H-L5b2JDiTP-7kdWGbP5xigB5337LrFBPrk91W5s/edit?usp=sharing",
 		"CT 685C":"https://docs.google.com/document/d/1WoCxxpDOVm59mNc2w5YO2xKygI6WC7t0t8rpCb_MAus/edit?usp=sharing",
 		"CT 686B":"https://docs.google.com/document/d/1pz48Ut5cnGbCU8B6sKPgtqAa99Rj0wZWjqnq7emW1EU/edit?usp=sharing",
 		"CT 686C":"https://docs.google.com/document/d/1PnDuOvqYyA3v0fwKOk3r6sMAfjZ8QA1Ugx1vUnLPApA/edit?usp=sharing",
@@ -248,6 +256,7 @@ var PDFLinks =
 		"CT 716C":"https://docs.google.com/document/d/1XJZuPuKlUL8Snl959vJqkGnyNkmnzaHlRTSSjcGM4TE/edit?usp=sharing",
 		"CT 717C":"https://docs.google.com/document/d/1gKLwsTyJ01bsyCQUFySljYrsf6Fkepn-QBR4SMt0d6A/edit?usp=sharing",
 		"CT 718C":"https://docs.google.com/document/d/1-aBCQLLznXuq8TptorMu3yYFhZZ38NWCbWOL7aJkKhI/edit?usp=sharing",
+	    "CT 719B":"https://docs.google.com/document/d/17d0c_N14agBMdrA_Uz_CZhiM1R_qVt5q3k7cLAfvxHA/edit?usp=sharing",
 		"CT 720A":"https://docs.google.com/document/d/1NDMLSLc7KbQZCJsConueGhAt8XZNs00i5U-TLwCFoJI/edit?usp=sharing",
 		"CT 720B":"https://docs.google.com/document/d/1MTUnZEXdTQEyaAsiu5YaBGg1Ay_I9myg2TeywSvMW2s/edit?usp=sharing",
 		"CT 720C":"https://docs.google.com/document/d/1D9MQbxMTtMTEq37ZBjeNQMSo9DgoxfpDECy7gcFqDis/edit?usp=sharing",
@@ -349,6 +358,8 @@ var PDFLinks =
 		"MR 425C":"https://docs.google.com/document/d/1Ruc5Uwh_7xwZjSS-rs-mZjFsBv9BSiqGmlQnnNLnayE/edit?usp=sharing",
 		"MR 426A":"https://docs.google.com/document/d/12ADuvyJ1PeA65z_sRnxeusxBuNCN_MUervHmFg17Q9I/edit?usp=sharing",
 		"MR 426C":"https://docs.google.com/document/d/117zTAX-8W_EkKYbSB-KmHebNTiZxSV8_WdeZFCdzmOE/edit?usp=sharing",
+		"MR 427A":"https://docs.google.com/document/d/153v9uz8_XwXV_OmmGGnVA1hd5n1hcCircPOU9j8FAzs/edit?usp=sharing",
+		"MR 427C":"https://docs.google.com/document/d/13DSgidTAYE8Lg0yfQXU4QoNXFWzSuWU1Q_PgfIbLLmk/edit?usp=sharing",
 		"MR 430A":"https://docs.google.com/document/d/1ujXUueD2BCZCzkgbdWgSohI3cwBWfWpEdx8sbjpWnyE/edit?usp=sharing",
 		"MR 430C":"https://docs.google.com/document/d/1Sf7BlOeObpXBODP6oGKvK3KTphCaSAZ5_UzvoeKyKTs/edit?usp=sharing",
 		"MR 431A":"https://docs.google.com/document/d/1uQK6t5ofGPbhY7O5rNht1m9qAcNV96DmCgCvuewXc_4/edit?usp=sharing",
@@ -389,6 +400,7 @@ var PDFLinks =
 		"MR 455A":"https://docs.google.com/document/d/14cNHJFBlw6oJ_jMtLQsuU9-qJgnpFqbqKbDGeVXWsAM/edit?usp=sharing",
 		"MR 455C":"https://docs.google.com/document/d/1GxuDefijHuBBfzBXtLuEHZs-sSBTLZP67vs6p8PfIiQ/edit?usp=sharing",
 		"MR 456A":"https://docs.google.com/document/d/1vMhPaRECfKZhfvCS7ySMLjPxgjdPkz0m4kSPX982GRU/edit?usp=sharing",
+		"MR 457A":"https://docs.google.com/document/d/17q6b1v3dqTtgtjrRisJ44YJH9oMkIAVf61yS9_xaJMU/edit?usp=sharing",
 		"MR 474C":"https://docs.google.com/document/d/1HY1kWPTw5740ZlZ6UHYhy_KTTvKJGsBu3mj1QoxqF4g/edit?usp=sharing",
 		"MR 490C":"https://docs.google.com/document/d/1RAeBy03-bTQfs1w-KmB80yq46Az8H4MOHyFPWD3mY-8/edit?usp=sharing",
 		
@@ -402,6 +414,7 @@ var PDFLinks =
 		"MR 512C":"https://docs.google.com/document/d/1_XorGFQL_EKhSz8F0mm2k63Dht6ds5on4HmOjqcP-1U/edit?usp=sharing",
 		"MR 520A":"https://docs.google.com/document/d/1CxY3VFceurYgrqT0sR-ooYchRg7VZoUU02QQbNb_zJc/edit?usp=sharing",
 		"MR 520C":"https://docs.google.com/document/d/1YP7kGwCbLiscngV6Joj77D80XVxWw_lAYgrYIQwXY8o/edit?usp=sharing",
+		"MR 522C":"",
 		"MR 523A":"https://docs.google.com/document/d/12o2pm59kfL42ZAd4uDLb4a6_PXmq0jZHIZBijR-uPGU/edit?usp=sharing",
 		"MR 523C":"https://docs.google.com/document/d/16RcAhscQvMJDx1TXI7TQ145CtFEa_H8X9piBtBue-uc/edit?usp=sharing",
 		"MR 524A":"https://docs.google.com/document/d/1lw2WSezJesRJpDotS_5mM0lDrx4yhuK9EpMQHaVm9GQ/edit?usp=sharing",
