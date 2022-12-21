@@ -1,8 +1,5 @@
 script.js
     faster addProtocols()?
-    MR 524 Low SAR has a PDF protocol and extra article but not in the List
-    MR 630 PDFs are both "630C" but List shows 630A (Inhance) and 630C
-    PDFLinksExtra - view actual PDF files with browser viewer instead of GDrive viewer
 
 CSV files: 
 	streamline process Google Sheets -> CSV
