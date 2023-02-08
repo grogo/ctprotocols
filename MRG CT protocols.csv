@@ -16,7 +16,7 @@
 123A;Trauma Maxillofacial;without;include mandible and maxilla;trauma, facial fractures, nasal fracture;;;;;;;;;;;;;;;;;;;;;
 124A;Stryker Sinus;without;;Sinusitis, preoperative planning,operative guidance;;;;;;;;;;;;;;;;;;;;;
 125C;Cisternogram;without and with;;CSF leak, CSF rhinorrhea or otorrhea, comminucating vs noncommunicating arachnoid cyst;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+126A;Facial stealth/Fusion;without;Include ears, tip of nose, cover from top of the head through the mandible;preoperative planning,operative guidance ;;;;;;;;;;;;;;;;;;;;;
 130A;Temporal Bones;without;;Cholesteatoma, hearing loss, trauma, mastoiditis, otitis media, tinnitus, retrotypmanic mass, otalgia, ossicular prostesis evaluation, cochlear implant evaluation;;;;;;;;;;;;;;;;;;;;;
 130B;Temporal Bones;with;;Pulsatile tinnitus, glomus tumor, sensorineural hearing loss (MRI contraindicated);;;;;;;;;;;;;;;;;;;;;
 130C;Temporal Bones;without and with;;Pulsatile tinnitus, glomus tumor, sensorineural hearing loss (MRI contraindicated);;;;;;;;;;;;;;;;;;;;;

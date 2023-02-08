@@ -139,6 +139,8 @@
 440D;Knee Arthrogram;60;with intra-articular;;Per orthopedic request, meniscal tear s/p surgery;;;;;;;;;;;;;;;;;;;;;
 440C;Knee (mass);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
 441A;MARS Knee;45;without;;;;;;;;;;;;;;;;;;;;;;;
+
+442C;MR Knee Osteomyelitis;45;without and with;knee;Osteomyelitis, osteonecrosis;;;;;;;;;;;;;;;;;;;;;
 443A;Lower Leg (Tib-Fib);45;without;tibia-fibula;Pain, tibial stress injury/fracture, Calf/gastrocnemius strain;;;;;;;;;;;;;;;;;;;;;
 443C;Lower Leg (mass);90;without and with;tibia-fibula;;;;;;;;;;;;;;;;;;;;;;
 444C;Soft Tissue Mass - Long Bone;60;without and with;;;;;;;;;;;;;;;;;;;;;;;
@@ -180,6 +182,7 @@
 530C;Spine Survey;;without and with;C-T-L spine;Cord compression, metatstatic disease, multiple myeloma;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 540C;Lumbar Plexus;60;without and with;L-spine and Sacrum?;Tumor, treatment planning, unexplained plexopathy, sacral/coccyx pain, sciatica, trauma;;;;;;;;;;;;;;;;;;;;;
+550C;Sacral Plexus;;without and with;bony pelvis;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 600;MRA;;;;;;;;;;;;;;;;;;;;;;;;;
 600A;MRA Head;15;without;;stroke, vascular occlusion/stenosis, aneurysm, AVM;;;;;;;;;;;;;;;;;;;;;

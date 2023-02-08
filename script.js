@@ -118,6 +118,8 @@ var PDFLinks =
 		"CT 123A":"https://docs.google.com/document/d/1ZfX9qcNEiwPGlqYZRDbV_sa0FNpnjBIbdJzLsO_-roQ/edit?usp=sharing",
 		"CT 124A":"https://docs.google.com/document/d/1WugyPNjP-s-zIVfPC4YTBXwv9nyak6d3x0yOE8D7Cxg/edit?usp=sharing",
 		"CT 125C":"https://docs.google.com/document/d/15IPeXsFiGrKqtXwDJ38LCsOqhLjDUPt0fIEpC8LwMoY/edit?usp=sharing",
+		"CT 126A":"https://docs.google.com/document/d/1pIsaGmXhGMzkx__K5cMX_Wm3eF9XF7lDM9aybRYA5Yo/edit?usp=sharing",
+
 		"CT 130A":"https://docs.google.com/document/d/1Mf1rBAmVRWAO0QZp1IZ5gnn6AtdKWSVus9ygv0NUORM/edit?usp=sharing",
 		"CT 130B":"https://docs.google.com/document/d/1NU3DCwYkOWFuzShoZKcqJ3ukzwm9SOMCb3VRc9nQkNU/edit?usp=sharing",
 		"CT 130C":"https://docs.google.com/document/d/1YE6iibdgl-7_ntukYHJ8xxwZNUkYMy_L8Oot2qByDpc/edit?usp=sharing",
@@ -378,7 +380,7 @@ var PDFLinks =
 		"MR 440D":"https://docs.google.com/document/d/1EA36aXCPKpJne2_QutwZClwk7U1vSWI2KOxbH4ijaIg/edit?usp=sharing",
 		"MR 441":"https://docs.google.com/document/d/1Pmd069SwfhVcG3n9YVFiabfvOaWS_ZWJAlQQRl7HJAQ/edit?usp=sharing",
 		"MR 441A":"https://docs.google.com/document/d/1CVARpN_LjZ3AIIVd5J-U-r8gSUB3p6yxHck0KSHlwBA/edit?usp=sharing",
-		"MR 442":"https://docs.google.com/document/d/1sAIwAAbyXwQNF-zNZW7yv5hSAKL_6MYlnOMRp0ZTffk/edit?usp=sharing",
+		"MR 442C":"https://docs.google.com/document/d/1X5JM7__V2W11HqUxvZHklpzvDw494L1JoiL-34nHbLA/edit?usp=sharing",
 		"MR 443A":"https://docs.google.com/document/d/1rubcjx-aajYkYECTwkVL5AAVn17YE0Xd65nUt_Kr7_M/edit?usp=sharing",
 		"MR 443C":"https://docs.google.com/document/d/1SeK57rWKeXuBJ3fUYzI8xw2Bc5cC_MJwFHEbo9xY5w0/edit?usp=sharing",
 		"MR 444C":"https://docs.google.com/document/d/1MPEt50rGxord3rVBck_I4IkOMlrb35zq_GBjj44E8Lo/edit?usp=sharing",
@@ -411,6 +413,8 @@ var PDFLinks =
 		"MR 502C":"https://docs.google.com/document/d/14cTlDVJq6vT-Qq3dcQRnFMwsFKQgiZua-5455MeIHh4/edit?usp=sharing",
 		"MR 510A":"https://docs.google.com/document/d/1Zfbrkv44BKdXEycWa34JJvmVDBhmPBHe9emxfEbz-_k/edit?usp=sharing",
 		"MR 510C":"https://docs.google.com/document/d/1eP4FlJzPzbZ_zhaqXclXFHc3fUE-VJ4aK0u6JWPgF5Q/edit?usp=sharing",
+		"MR 512A":"https://docs.google.com/document/d/1BHEdbUF8XAUwFKRJ-gM_AnQJhAM-cqzWNKp_pJ5e6kw/edit?usp=sharing",
+
 		"MR 512C":"https://docs.google.com/document/d/1_XorGFQL_EKhSz8F0mm2k63Dht6ds5on4HmOjqcP-1U/edit?usp=sharing",
 		"MR 520A":"https://docs.google.com/document/d/1CxY3VFceurYgrqT0sR-ooYchRg7VZoUU02QQbNb_zJc/edit?usp=sharing",
 		"MR 520C":"https://docs.google.com/document/d/1YP7kGwCbLiscngV6Joj77D80XVxWw_lAYgrYIQwXY8o/edit?usp=sharing",
