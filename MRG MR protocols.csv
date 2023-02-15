@@ -125,7 +125,7 @@
 430A;Pelvis (bone);45;without;pelvis + hips + sacrum;Pain, fracture;;;;;;;;;;;;;;;;;;;;;
 431A;Pelvis (sports hernia);45;without;;Lower abdominal muscle/tendon strain, adductor muscle/tendon strain;;;;;;;;;;;;;;;;;;;;;
 430C;Pelvis (bone);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
-433A;Hip (routine);30;without;;;;;;;;;;;;;;;;;;;;;;;
+433A;Hip (routine);45;without;;;;;;;;;;;;;;;;;;;;;;;
 433D;Hip Arthrogram;60;with intra-articular;;Labral tear, per orthopedic request;;;;;;;;;;;;;;;;;;;;;
 433C;Hip (mass);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
 434A;Hip (AVN);45;without;;Avascular necrosis (AVN), osteonecrosis;;;;;;;;;;;;;;;;;;;;;
