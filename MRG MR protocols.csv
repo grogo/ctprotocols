@@ -1,7 +1,4 @@
-﻿;Short name;Time;Contrast;Anatomic region;Additional info;Full protocol?;;;;;;;;;;;;;;;;;;;;
-;"Suffix codes: A=without; B=with; C=without+with; D=arthrogram/cystogram";;;;;;;;;;;;;;;;;;;;;;;;;
-;MRI PROTOCOLS;;;;;;;;;;;;;;;;;;;;;;;;;
-100;HEAD AND NECK;;;;;;;;;;;;;;;;;;;;;;;;;
+﻿100;HEAD AND NECK;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 100A;Brain (routine);30;without;head;Traumatic brain injury, hemorrhage, headache, altered mental status, dementia, memory loss, stroke, hydrocephalus, syncope;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -44,8 +41,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-180C;Pediatric Brain;60;with and without;head;Traumatic brain injury, hemorrhage, headache, altered mental status, hydrocephalus, syncope;;;;;;;;;;;;;;;;;;;;;
-180A;Pediatric Brain;30;without;head;Tumor, infection, metastatic disease, cranial nerve palsy, unexplained hemorrhage;;;;;;;;;;;;;;;;;;;;;
+180A;Pediatric Brain;30;without;head;Traumatic brain injury, hemorrhage, headache, altered mental status, hydrocephalus, syncope;;;;;;;;;;;;;;;;;;;;;
+180C;Pediatric Brain;60;with and without;head;Tumor, infection, metastatic disease, cranial nerve palsy, unexplained hemorrhageTumor, infection, metastatic disease, cranial nerve palsy, unexplained hemorrhage;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 200;THORAX;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -75,7 +72,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 340C;MR Urogram;60;without and with;abdomen + pelvis;Hematuria, urothelial/transitional cell cancer, bladder or ureteral mass, cancer;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-350C;MR enterography;60;without and with, Volumen/Breeza oral;abdomen + pelvis;Crohn's, inflammatory bowel dz, bowel tumor, stricture, fistula, capsule enterography;;;;;;;;;;;;;;;;;;;;
+350C;MR enterography;60;without and with, Volumen/Breeza oral;abdomen + pelvis;Crohn's, inflammatory bowel dz, bowel tumor, stricture, fistula, capsule enterography;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 360C;Prostate (CARM AND SAC ONLY);45;without and with;pelvis;elevated PSA, prostate CA;;;;;;;;;;;;;;;;;;;;;
 361C;Scrotal;60;without and with;pelvis + scrotum;testicular cancer, mass, infection, Testicular nodule, Epididymal nodule;;;;;;;;;;;;;;;;;;;;;
@@ -133,23 +130,24 @@
 437C;Femur / Thigh (mass);90;without and with;;;;;;;;;;;;;;;;;;;;;;;
 438A;Sciatic Nerve (Femur);45;WITHOUT;;;;;;;;;;;;;;;;;;;;;;;
 438C;Sciatic Nerve (Femur);75;without and with;;;;;;;;;;;;;;;;;;;;;;;
-439A;SI Joints;45;without;sacroiliac joints;Sacral or coccyx pain, fracture, Sacroiliitis (do with and without / add axial and coronal post);;;;;;;;;;;;;;;;;;;;;
+439A;SI Joints;45;without;sacroiliac joints;Sacral or coccyx pain, sacrum fracture, Sacroiliitis (do with and without / add axial and coronal post);;;;;;;;;;;;;;;;;;;;;
+439C;SI Joints;45;without and with;sacroiliac joints;Sacroiliitis, infection, inflammation;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 440A;Knee;30;without;;;;;;;;;;;;;;;;;;;;;;;
 440D;Knee Arthrogram;60;with intra-articular;;Per orthopedic request, meniscal tear s/p surgery;;;;;;;;;;;;;;;;;;;;;
 440C;Knee (mass);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
 441A;MARS Knee;45;without;;;;;;;;;;;;;;;;;;;;;;;
-
 442C;MR Knee Osteomyelitis;45;without and with;knee;Osteomyelitis, osteonecrosis;;;;;;;;;;;;;;;;;;;;;
 443A;Lower Leg (Tib-Fib);45;without;tibia-fibula;Pain, tibial stress injury/fracture, Calf/gastrocnemius strain;;;;;;;;;;;;;;;;;;;;;
 443C;Lower Leg (mass);90;without and with;tibia-fibula;;;;;;;;;;;;;;;;;;;;;;
 444C;Soft Tissue Mass - Long Bone;60;without and with;;;;;;;;;;;;;;;;;;;;;;;
-445A;Ankle;45;without;;;;;;;;;;;;;;;;;;;;;;;
-445C;Ankle (mass);60;without and with;;Pain, instability, ligament or tendon tear, OCD (osteochondral lesion);;;;;;;;;;;;;;;;;;;;;
-446C;Ankle Osteo;60;without and with;;osteomyelitis;;;;;;;;;;;;;;;;;;;;;
+445A;Ankle;45;without;;Pain, instability, ligament or tendon tear, OCD (osteochondral lesion);;;;;;;;;;;;;;;;;;;;;
+445C;Ankle (mass);60;without and with;;tumor;;;;;;;;;;;;;;;;;;;;;
+446C;Ankle Osteo;60;without and with;;osteomyelitis, infection, septic arthritis;;;;;;;;;;;;;;;;;;;;;
 447A;Foot;30;without;;;;;;;;;;;;;;;;;;;;;;;
 447C;Foot (mass);60;without and with;;Morton's neuroma;;;;;;;;;;;;;;;;;;;;;
 448C;Foot Osteo;60;without and with;;osteomyelitis;;;;;;;;;;;;;;;;;;;;;
+449A;Hamstring;45;without;thigh;Hamstring injury or hamstring strain;;;;;;;;;;;;;;;;;;;;;
 450A;Biomet Hip;45;without;;;;;;;;;;;;;;;;;;;;;;;
 451A;Zimmer Knee;30;without;;;;;;;;;;;;;;;;;;;;;;;
 452A;Stryker Knee;;without;;;;;;;;;;;;;;;;;;;;;;;
@@ -176,8 +174,7 @@
 520A;L-spine;30;without;;Degenerative disc disease, extremity pain/weakness, lower back pain, radiculopathy, trauma, compression fracture, conus medullaris compression;;;;;;;;;;;;;;;;;;;;;
 520C;L-spine;60;without and with;;Discitis/osteomyelitis, epidural abscess, mass, metastatic disease, myelopthy, abnormal cord signal, post lumbar surgery;;;;;;;;;;;;;;;;;;;;;
 522C;L-spine (MS protocol);60;without and with;;multiple sclerosis, neuromyelitis optica spectrum disorder;;;;;;;;;;;;;;;;;;;;;
-523A;Sacrum / Coccyx;;without;;Please see SI Joint protocol (439);;;;;;;;;;;;;;;;;;;;;
-523C;Sacrum for Osteomyelitis;60;without and with;;;;;;;;;;;;;;;;;;;;;;;
+523C;Sacrum for Osteomyelitis;60;without and with;sacrum;infection;;;;;;;;;;;;;;;;;;;;;
 524A;Low SAR spine;60;without and with;;Degenerative disc disease, pain, radiculopathy in patients with a Nevro spinal cord stimulator;;;;;;;;;;;;;;;;;;;;;
 530C;Spine Survey;;without and with;C-T-L spine;Cord compression, metatstatic disease, multiple myeloma;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
