@@ -130,8 +130,8 @@
 437C;Femur / Thigh (mass);90;without and with;;;;;;;;;;;;;;;;;;;;;;;
 438A;Sciatic Nerve (Femur);45;WITHOUT;;;;;;;;;;;;;;;;;;;;;;;
 438C;Sciatic Nerve (Femur);75;without and with;;;;;;;;;;;;;;;;;;;;;;;
-439A;SI Joints;45;without;sacroiliac joints;Sacral or coccyx pain, sacrum fracture, Sacroiliitis (do with and without / add axial and coronal post);;;;;;;;;;;;;;;;;;;;;
-439C;SI Joints;45;without and with;sacroiliac joints;Sacroiliitis, infection, inflammation;;;;;;;;;;;;;;;;;;;;;
+439A;SI Joints;45;without;sacroiliac joints;Sacral or coccyx pain, sacrum fracture;;;;;;;;;;;;;;;;;;;;;
+439C;SI Joints - Sacroiliitis;45;without and with;sacroiliac joints;Sacroiliitis, sacrum inflammation;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 440A;Knee;30;without;;;;;;;;;;;;;;;;;;;;;;;
 440D;Knee Arthrogram;60;with intra-articular;;Per orthopedic request, meniscal tear s/p surgery;;;;;;;;;;;;;;;;;;;;;
