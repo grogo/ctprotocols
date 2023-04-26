@@ -175,7 +175,8 @@
 520C;L-spine;60;without and with;;Discitis/osteomyelitis, epidural abscess, mass, metastatic disease, myelopthy, abnormal cord signal, post lumbar surgery;;;;;;;;;;;;;;;;;;;;;
 522C;L-spine (MS protocol);60;without and with;;multiple sclerosis, neuromyelitis optica spectrum disorder;;;;;;;;;;;;;;;;;;;;;
 523C;Sacrum for Osteomyelitis;60;without and with;sacrum;infection;;;;;;;;;;;;;;;;;;;;;
-524A;Low SAR spine;60;without and with;;Degenerative disc disease, pain, radiculopathy in patients with a Nevro spinal cord stimulator;;;;;;;;;;;;;;;;;;;;;
+524A;Low SAR spine;60;without;;Degenerative disc disease, pain, radiculopathy in patients with a Nevro spinal cord stimulator;;;;;;;;;;;;;;;;;;;;;
+524C;Low SAR spine wo+w;60;without and with;;Infection, degenerative disc disease, pain, radiculopathy in patients with a Nevro spinal cord stimulator;;;;;;;;;;;;;;;;;;;;;
 530C;Spine Survey;;without and with;C-T-L spine;Cord compression, metatstatic disease, multiple myeloma;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 540C;Lumbar Plexus;60;without and with;L-spine and Sacrum?;Tumor, treatment planning, unexplained plexopathy, sacral/coccyx pain, sciatica, trauma;;;;;;;;;;;;;;;;;;;;;
