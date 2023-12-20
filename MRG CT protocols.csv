@@ -89,7 +89,7 @@
 420A;Conformis Knee;without;;;PDF;;;;;;;;;;;;;;;;;;;;
 421A;Zimmer Knee;without;;;PDF;;;;;;;;;;;;;;;;;;;;
 422A;Zimmer Shoulder;without;;;PDF;;;;;;;;;;;;;;;;;;;;
-423A;BLUEPRINT Shoulder;without;;;;;;;;;;;;;;;;;;;;;;;
+423A;MATERIALISE/LIMA Shoulder;without;;;;;;;;;;;;;;;;;;;;;;;
 424A;DePuy Pelvis;without;;;;;;;;;;;;;;;;;;;;;;;
 425A;BLUEPRINT Shoulder;without;;;;;;;;;;;;;;;;;;;;;;;
 426A;Mako Knee;without;;;;;;;;;;;;;;;;;;;;;;;
@@ -131,8 +131,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 630C;CTA Chest/Abdomen Dissection;without and with;chest + abdomen;aortic dissection;;;;;;;;;;;;;;;;;;;;;
 631C;CTA Chest/Abdomen Stent Graft;without and with;chest + abdomen;aortic dissection/aneurysm, status post aortic stent graft placement;;;;;;;;;;;;;;;;;;;;;
+632B;CTA C/A/P;with;chest + abdomen + pelvis;Aorta, dissection;;;;;;;;;;;;;;;;;;;;;
 632C;CTA C/A/P Dissection;without and with;chest + abdomen + pelvis;aortic dissection;;;;;;;;;;;;;;;;;;;;;
-632B;CTA C/A/P Dissection;with;chest + abdomen + pelvis;Aortic dissection;;;;;;;;;;;;;;;;;;;;;
 634C;CTA C/A/P Stent Graft;without and with;chest + abdomen + pelvis;Aortic dissection/aneurysm, status post aortic stent graft placement;;;;;;;;;;;;;;;;;;;;;
 635B;CTA Da Vinci / Mitral Valve Replace;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -186,6 +186,7 @@
 714C;Chest and Adrenal;without and with;chest + abdomen;Chest with. Abd without and with (Adrenal protocol);;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 715C;C/A/P Pancreas;without and with;C/A/P;Chest and Pelvis with. Abd without and with (Pancreas protocol);;;;;;;;;;;;;;;;;;;;;
+716B;C/A/P Liver;with;C/A/P;Chest Abd and Pelvis with. Use when cannot get order for WO portion (716C) (Liver protocol);;;;;;;;;;;;;;;;;;;;;
 716C;C/A/P Liver;without and with;C/A/P;Chest and Pelvis with. Abd without and with (Liver protocol);;;;;;;;;;;;;;;;;;;;;
 717C;C/A/P Renal mass;without and with;C/A/P;Chest and Pelvis with. Abd without and with (Renal mass protocol);;;;;;;;;;;;;;;;;;;;;
 718C;C/A/P Adrenal;without and with;C/A/P;Chest and Pelvis with. Abd without and with (Adrenal protocol);;;;;;;;;;;;;;;;;;;;;

@@ -76,6 +76,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 360C;Prostate (CARM AND SAC ONLY);45;without and with;pelvis;elevated PSA, prostate CA;;;;;;;;;;;;;;;;;;;;;
 361C;Scrotal;60;without and with;pelvis + scrotum;testicular cancer, mass, infection, Testicular nodule, Epididymal nodule;;;;;;;;;;;;;;;;;;;;;
+362A;Penis;60;without and with;pelvis + scrotum;penile trauma;;;;;;;;;;;;;;;;;;;;;
 362C;Penis;60;without and with;pelvis + scrotum;penile cancer, mass, infection;;;;;;;;;;;;;;;;;;;;;
 363C;Perianal Fistula;60;without and with;pelvis;anal or rectal fistula or abscess, Crohn's, perineal abscess;;;;;;;;;;;;;;;;;;;;;
 365C;Rectal Cancer;60;without and with;pelvis;staging of rectal cancer, mass;;;;;;;;;;;;;;;;;;;;;
