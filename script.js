@@ -33,9 +33,9 @@ request.onreadystatechange = function() {
 				CSVData = CTData.concat(MRData);				// combine the CT and MR entries into one array
 
 				console.log("start adding " + CTData.length + " CT protocols, " + MRData.length + " MR protocols");
-				console.time("addProtocols()");					// time this function; it's a little slow
-					addProtocols();
-				console.timeEnd("addProtocols()");
+				// console.time("addProtocols()");					// time this function; it's a little slow
+				addProtocols();
+				// console.timeEnd("addProtocols()");
 
 				// remove blank and undefined rows from the table
 				protocolList.remove('protNum','');
