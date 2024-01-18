@@ -266,7 +266,8 @@ var PDFLinks =
 		"CT 720B":"https://docs.google.com/document/d/1MTUnZEXdTQEyaAsiu5YaBGg1Ay_I9myg2TeywSvMW2s/edit?usp=sharing",
 		"CT 720C":"https://docs.google.com/document/d/1D9MQbxMTtMTEq37ZBjeNQMSo9DgoxfpDECy7gcFqDis/edit?usp=sharing",
 		"CT 723B":"https://docs.google.com/document/d/1tbWy-ZSTOt_R_vOx41esBVDUWg4J0fUXv15G13hQKHM/edit?usp=sharing",
-		
+
+		"CT 901B":"https://drive.google.com/file/d/1aJwHa3nWrPSjXYElJyGKW0m584AzK8TI/view?usp=sharing",
 
 		// MRI 100 NEURO
 		"MR 100A":"https://docs.google.com/document/d/1KATgW6r5xV3xl3WqshPP2lbJpjuQEHanAju5xUr1Wpk/edit?usp=sharing",

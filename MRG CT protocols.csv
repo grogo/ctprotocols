@@ -196,7 +196,7 @@
 720C;Chest + Abdomen + Pelvis;with + without;C/A/P;cancer followup in a patient with a hypervascular primary cancer (renal, melanoma, choriocarcinoma etc);;;;;;;;;;;;;;;;;;;
 722C;Chest + Abdomen + Pelvis;without and with;C/A/P;No specific protocol (see above). Just without and with routine scan;;;;;;;;;;;;;;;;;;;;;
 723B;C/A/P w/ Three Contrasts;with;C/A/P;Oral + Rectal + IV contrast;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;
+901B;Isovue-370 dosage by weight nomogram;with;any;for IV contrast based on weight;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
