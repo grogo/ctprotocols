@@ -4,7 +4,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 100C;Brain (routine);45;without and with;head;Tumor, infection, metastatic disease, cranial nerve palsy, unexplained hemorrhage;;;;;;;;;;;;;;;;;;;;;
 102C;Brain (brain tumor perfusion);;without and with;head;Tumor evaluation, radiation necrosis, acute stroke;;;;;;;;;;;;;;;;;;;;;
-103C;Brain (mets);60;without and with;head;Tumor, metatstatic disease, post treatment follow up;;;;;;;;;;;;;;;;;;;;;
+103C;Brain (mets);60;without and with;head;Tumor, metatstatic disease, post treatment f/u, NRG-BN011 research protocol;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 105C;Brain (SRS protocol);60;without and with;head;Tumor, metatstatic disease, post treatment follow up;;;;;;;;;;;;;;;;;;;;;
 106C;Brain (SRS and Sella protocol);60;without and with;head;Preoperative evaluation/operative guidance for sellar/suprasellar tumor;;;;;;;;;;;;;;;;;;;;;
