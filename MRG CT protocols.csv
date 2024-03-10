@@ -36,6 +36,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 215A;HRCT;without;;interstitial lung disease (ILD/IPF/UIP), pulmonary fibrosis, dyspnea, drug toxicity (supine + expiration + prone);;;;;;;;;;;;;;;;;;;;;
 221A;HRCT with contiguous;without;;interstitial lung disease (ILD/IPF/UIP), pulmonary fibrosis, dyspnea, drug toxicity, with contiguous scan (supine SuperD. expiration + prone skip series);;;;;;;;;;;;;;;;;;;;;
+222A;CT Esophagram;without IV, oral only;At least 1 cm of trachea to adrenals; esophageal perforation/leak;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;

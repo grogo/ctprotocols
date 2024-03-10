@@ -136,6 +136,7 @@ var PDFLinks =
 		"CT 213A":"https://docs.google.com/document/d/1uoDL5NlquFx_9WL1tUe6Llzx19pH9XYlU6AitK2peMw/edit?usp=sharing",
 		"CT 215A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
 		"CT 221A":"https://docs.google.com/document/d/13Avndh7Ts0HqszNmuH9hRM96kkpy_D2mQ5Xd0Usg2Vw/edit?usp=sharing",
+		"CT 222A":"https://docs.google.com/document/d/1M8rSkPvJ426mY_SqeUtAE5cQwjgGWBnzJMYaluzHMdg/edit?usp=sharing",
 
 		// CT 300 ABDOMEN PELVIS
 		"CT 300A":"https://docs.google.com/document/d/1OPnOj6NztXsF-eoAcZst6bNbonFMq99Z4sRUWLfX8Cw/edit?usp=sharing",
