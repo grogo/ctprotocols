@@ -50,7 +50,8 @@
 200C;Chest;60;without and with;chest wall + mediastinum;MSK Chest MRI with & without contrast;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-221C;Breasts ;45;without and with;breasts;Breast cancer workup or screening;;;;;;;;;;;;;;;;;;;;;
+221A;Breasts ;45;without and with;bilateral breasts;Implant evaluation, implant rupture;;;;;;;;;;;;;;;;;;;;;
+221C;Breasts ;45;without and with;bilateral breasts;Breast cancer workup or screening;;;;;;;;;;;;;;;;;;;;;
 225C;Brachial Plexus;60;without and with;neck + shoulder;brachial plexopathy, trauma/injury, tumor invasion;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 230C;Chest (Mediastinal Mass);60;without and with;mediastinum;thymic lesion, thymoma, mediastinal mass;;;;;;;;;;;;;;;;;;;;;
@@ -83,7 +84,7 @@
 366A;Appendicitis in Pregnancy;60;without;pelvis;;;;;;;;;;;;;;;;;;;;;;
 367A;Placenta Accreta;60;NO IV CONTRAST;uterus + pelvis;pregnancy complication, placental invasion, accreta, accreta, increta;;;;;;;;;;;;;;;;;;;;;
 368C;Routine Pelvis;60;with and without;;pain;;;;;;;;;;;;;;;;;;;;;
-369A;Piriformis Syndrome Pelvis;60;without;;MSK;;;;;;;;;;;;;;;;;;;;;
+369A;Piriformis Syndrome Pelvis;60;without;pelvis;piriformis syndrome;;;;;;;;;;;;;;;;;;;;;
 ;;60;;;;;;;;;;;;;;;;;;;;;;;;
 370A;Female Pelvis Routine;60;without;pelvis;uterine or ovarian mass, pain, no contrast (e.g. pregnancy);;;;;;;;;;;;;;;;;;;;;
 370C;Female Pelvis;60;without and with;pelvis;Routine female pelvis, uterine, cervical, ovarian mass, UFE fibroids, cancer, hydrosalpinx, adenomyosis;;;;;;;;;;;;;;;;;;;;;
@@ -123,10 +124,10 @@
 430A;Pelvis (bone);45;without;pelvis + hips + sacrum;Pain, fracture;;;;;;;;;;;;;;;;;;;;;
 431A;Pelvis (sports hernia);45;without;;Lower abdominal muscle/tendon strain, adductor muscle/tendon strain;;;;;;;;;;;;;;;;;;;;;
 430C;Pelvis (bone);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
-433A;Hip (routine);45;without;;;;;;;;;;;;;;;;;;;;;;;
-433D;Hip Arthrogram;60;with intra-articular;;Labral tear, per orthopedic request;;;;;;;;;;;;;;;;;;;;;
-433C;Hip (mass);60;without and with;;;;;;;;;;;;;;;;;;;;;;;
-434A;Hip (AVN);45;without;;Avascular necrosis (AVN), osteonecrosis;;;;;;;;;;;;;;;;;;;;;
+433A;Hip (routine);45;without;hip;internal derangemement, degeneration, arthritis;;;;;;;;;;;;;;;;;;;;;
+433D;Hip Arthrogram;60;with intra-articular;hip;Labral tear, per orthopedic request;;;;;;;;;;;;;;;;;;;;;
+433C;Hip (mass);60;without and with;hip;;;;;;;;;;;;;;;;;;;;;;
+434A;Hip (AVN);45;without;hip;Avascular necrosis (AVN), osteonecrosis;;;;;;;;;;;;;;;;;;;;;
 437A;Femur / Thigh;45;without;;;;;;;;;;;;;;;;;;;;;;;
 437C;Femur / Thigh (mass);90;without and with;;;;;;;;;;;;;;;;;;;;;;;
 438A;Sciatic Nerve (Femur);45;WITHOUT;;;;;;;;;;;;;;;;;;;;;;;
