@@ -10,6 +10,13 @@
             "name": "Launch Microsoft Edge and open the Edge DevTools",
             "url": "http://localhost/ctprotocols/index.html",
             "webRoot": "${workspaceFolder}"
+        },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost/ctprotocols/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

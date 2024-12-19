@@ -186,7 +186,8 @@
 600;MRA;;;;;;;;;;;;;;;;;;;;;;;;;
 600A;MRA Head;15;without;;stroke, vascular occlusion/stenosis, aneurysm, AVM;;;;;;;;;;;;;;;;;;;;;
 600C;MRA Head;45;without and with;;post embolization aneurysm follow up;;;;;;;;;;;;;;;;;;;;;
-602A;MRV Head;15;without;;dural venous sinus thrmobosis or stenosis;;;;;;;;;;;;;;;;;;;;;
+602A;MRV Head;15;without;;MR Venogram, dural venous sinus thrmobosis or stenosis;;;;;;;;;;;;;;;;;;;;;
+602C;MRV Head;15;without and with;;MR Venogram, dural venous sinus thrmobosis or stenosis;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
 610A;MRA Neck;30;without;;Carotid stenosis, stroke, vertebrobasilar insufficiency, fibromuscular dysplasia, dissection (add axial T1 FS);;;;;;;;;;;;;;;;;;;;;
 610C;MRA Neck;45;without and with;;Carotid stenosis, stroke, vertebrobasilar insufficiency, fibromuscular dysplasia, dissection (add axial T1 FS);;;;;;;;;;;;;;;;;;;;;
