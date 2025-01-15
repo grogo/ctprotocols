@@ -142,12 +142,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 600;Vascular;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
-600C;CTA Head;with and without;head only;Acute stroke/TIA, aneurysm, AVM, intracranial hemorrhage, visual changes, headache, pulsatile tinnitus, cranial nerve palsy, vasculitis, reversible vasoconstriction syndrome, Moyamoya syndrome;;;;;;;;;;;;;;;;;;;;;
+600B;CTA Head;with;head only;Acute stroke/TIA, aneurysm, AVM, intracranial hemorrhage, visual changes, headache, pulsatile tinnitus, cranial nerve palsy, vasculitis, reversible vasoconstriction syndrome, Moyamoya syndrome;;;;;;;;;;;;;;;;;;;;;
 602C;CTV Head;with and without;head only;venogram of intracranial vessels, dural venous sinus thrmobosis or stenosis, 40 sec delay;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 611B;CTA Neck / Carotid;with only;neck only;Carotid stenosis, dissection, trauma, fibromuscular dysplasia;;;;;;;;;;;;;;;;;;;;;
 611C;CTA Neck / Carotid;without and with;neck only;(Dr. Maidan special);;;;;;;;;;;;;;;;;;;;;
-612C;CTA Head and Neck;without and with;head + neck;Stroke/TIA, vertebrobasilar insufficiency;;;;;;;;;;;;;;;;;;;;;
+612B;CTA Head and Neck;with;head + neck;Stroke/TIA, vertebrobasilar insufficiency;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 620B;CTA Chest Aorta;with;chest;evaluation of suspected or known aortic pathology, use ECG gating if prior ascending aortic or root repair;;;;;;;;;;;;;;;;;;;;;
 620C;CTA Chest Aorta;without and with;chest;evaluation of suspected or known aortic pathology, use ECG gating if prior ascending aortic or root repair;;;;;;;;;;;;;;;;;;;;;

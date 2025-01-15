@@ -224,11 +224,11 @@ var PDFLinks =
 		"CT 531A":"https://docs.google.com/document/d/12ums4Hz-9RnrZ5ziT40x9TvBBX90-Q406PU0GsA9Bjs/edit?usp=sharing",
 		
 		// CT 600 CTA - VASCULAR
-		"CT 600C":"https://docs.google.com/document/d/1gsCUU0NIWwr6sfmlEhFRqPiCg70gLuoGxQHBwBcGifM/edit?usp=sharing",
+		"CT 600B":"https://docs.google.com/document/d/1gsCUU0NIWwr6sfmlEhFRqPiCg70gLuoGxQHBwBcGifM/edit?usp=sharing",
 		"CT 602C":"https://docs.google.com/document/d/1t-u96HDd_BanDVHSyRiVfThHQMDHwbxg1rxGacv7kzU/edit?usp=sharing",
 		"CT 611B":"https://docs.google.com/document/d/1EMHYUyIc1zwQtyd_EYk72EK6bNmEbqe7nFRoJvKlhWI/edit?usp=sharing",
 		"CT 611C":"https://docs.google.com/document/d/1VS8_G9t-PPUbnwmx-afhIzjL7FQSV5Fsybz2nZEFv1c/edit?usp=sharing",
-		"CT 612C":"https://docs.google.com/document/d/1zsJjxESMY1dXq0WhOjFMGTEij8Cvo7OLX0A8tMdW2cs/edit?usp=sharing",
+		"CT 612B":"https://docs.google.com/document/d/1zsJjxESMY1dXq0WhOjFMGTEij8Cvo7OLX0A8tMdW2cs/edit?usp=sharing",
 		"CT 620B":"https://docs.google.com/document/d/1mSjE-hkxCTtZTBnGNeGx87-5AhjbWEUzujxB75qmMM0/edit?usp=sharing",
 		"CT 620C":"https://docs.google.com/document/d/1kDNagtkZS27KIkSe2CsSwilEVMezXLMRL4Gaw9bDtKI/edit?usp=sharing",
 		"CT 621B":"https://docs.google.com/document/d/13l3IloOvTzbd2tADn1qBZn5Jy75JVVOyvORqjU6adi4/edit?usp=sharing",
@@ -405,6 +405,7 @@ var PDFLinks =
 		"MR 430A":"https://docs.google.com/document/d/1ujXUueD2BCZCzkgbdWgSohI3cwBWfWpEdx8sbjpWnyE/edit?usp=sharing",
 		"MR 430C":"https://docs.google.com/document/d/1Sf7BlOeObpXBODP6oGKvK3KTphCaSAZ5_UzvoeKyKTs/edit?usp=sharing",
 		"MR 431A":"https://docs.google.com/document/d/1uQK6t5ofGPbhY7O5rNht1m9qAcNV96DmCgCvuewXc_4/edit?usp=sharing",
+		"MR 432A":"https://docs.google.com/document/d/1csrOPZcbNFn6g16NpdBAYQcuE6TWHdxU-8AwOzxdj7k/edit?usp=sharing",
 		"MR 433A":"https://docs.google.com/document/d/1zYTxuy_JQKAqxRrkDwkat_o8WW-CtBwHI9o69cYESLc/edit?usp=sharing",
 		"MR 433C":"https://docs.google.com/document/d/1F3B083BmgwmyEq6lhvV6eC1ZN3GsxDTCfsy6saThrRA/edit?usp=sharing",
 		"MR 433D":"https://docs.google.com/document/d/1kEHyt4mhPuoODfDAtYyqyKDSCSZVLj3581RkQzGxeHw/edit?usp=sharing",
